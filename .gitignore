@@ -1,0 +1,19 @@
+# 运行时数据（用户目录，仓库内兜底忽略）
+.ai-with-u/
+AIWU_STORAGE_ROOT/
+
+# 蒸馏中间产物
+output/
+
+# 临时与系统文件
+*.tmp
+*.log
+Thumbs.db
+.DS_Store
+
+# 编辑器
+.vscode/
+.idea/
+
+# 设计/发布文档（不随仓库分发，仅本地开发使用）
+docs/

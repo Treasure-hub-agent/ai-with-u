@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "ai-with-u character card",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string" },
+    "basic": { "type": "object" },
+    "personality": { "type": "object" },
+    "voice": { "type": "object" },
+    "relationship": { "type": "object" },
+    "memory_anchor": { "type": "object" },
+    "dynamic_state": { "type": "object" },
+    "interaction_pref": { "type": "object" },
+    "source": { "enum": ["distill", "custom", "import"] },
+    "lite": { "type": "boolean" }
+  },
+  "required": ["name", "basic", "personality", "voice", "relationship", "memory_anchor", "dynamic_state", "interaction_pref", "source"],
+  "additionalProperties": true
+}
