@@ -1,6 +1,6 @@
 {
-    "version":  "0.1.1",
-    "generated":  "2026-08-09T11:39:51Z",
+    "version":  "0.1.2",
+    "generated":  "2026-08-09T12:51:09Z",
     "root":  "ai-with-u",
     "files":  {
                   ".gitattributes":  {
@@ -16,8 +16,8 @@
                                                      "bytes":  8287
                                                  },
                   "extended/diary_memory.md":  {
-                                                   "sha256":  "ac37da6647b423ed0d256a0465998f556c2f1b9cbbed0bf1ee3a9506dfaa5ea5",
-                                                   "bytes":  4999
+                                                   "sha256":  "a07393fa94801482759edbe6b0420829c0098bdd412f6538b558fdc206ee7193",
+                                                   "bytes":  5259
                                                },
                   "extended/distillation.md":  {
                                                    "sha256":  "cf80459c4718dca1e478eb3f0852d2a95ef196303b5d71b9310e2858ae46b13b",
@@ -40,16 +40,16 @@
                                   "bytes":  1075
                               },
                   "package.json":  {
-                                       "sha256":  "0452e2e99523629a7832e25791595a97c983b8612e935b317a389fd5b2b766b9",
+                                       "sha256":  "4f6aa8f9715886d6bf6275ba508965c8415c3484c1c7fd2f4821b6ca12ea5e6d",
                                        "bytes":  707
                                    },
                   "README.md":  {
-                                    "sha256":  "508edc8b89c3e8184f7840cfbd75c303a0e4359cc9ba3a6058bbba0f8e83f995",
+                                    "sha256":  "e552ddb4454d6dfa53b2a4dfb7fb1fa08e6e891c0e64a6a9074049c944ce2322",
                                     "bytes":  5235
                                 },
                   "references/changelog.md":  {
-                                                  "sha256":  "e36448991a951422f4eb74ae2b3e36ee978030384c9ef78b4dd304f227e7a1be",
-                                                  "bytes":  3022
+                                                  "sha256":  "d8f1deff99d11d23264f38e59f693f1ca1bc6801719c9108e8325443c2c7898e",
+                                                  "bytes":  3515
                                               },
                   "references/command_nav.md":  {
                                                     "sha256":  "e07acfe369c92180e3703ac93848ff6e4d1fcffdbad79dc95928986636edfbfb",
@@ -68,18 +68,18 @@
                                                             "bytes":  722
                                                         },
                   "schema/diary.schema.json":  {
-                                                   "sha256":  "3a459b8b8e355d64b2aea6828372c869f4d7f9a4f2c8d7739d91d5ced36fc583",
-                                                   "bytes":  567
+                                                   "sha256":  "b068ed16ee44931240aa753518a3ebdbd8880f4b4b88a2ce4e34b71660378202",
+                                                   "bytes":  597
                                                },
                   "SKILL.md":  {
-                                   "sha256":  "b09afcbe08dd25ec1517d9b2af129088883ad9e64b5f47a6c7879b56e3665340",
+                                   "sha256":  "1ff902a54fdde7dbb00578c3108d64cfe4deb7a55390fa192de6b6f61585f759",
                                    "bytes":  9133
                                },
                   "VERSION":  {
-                                  "sha256":  "80447316529fc62014fbaa047fb67c51ac30e32830cda370405349d8d66d196c",
+                                  "sha256":  "297b50f08386d3521f8fdaf2f78eb8d9d0acdf452d2e61596905fba37208c792",
                                   "bytes":  6
                               }
               },
     "total_files":  19,
-    "total_bytes":  74299
+    "total_bytes":  75082
 }

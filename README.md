@@ -82,7 +82,7 @@ ai-with-u/
 ├── SKILL.md                      # P0 常驻核心（对话铁律 / 真人感 / 输入处理 / 记忆纪律 / 加载索引）
 ├── README.md                     # 本文件：使用指南 + 安装 + 架构
 ├── MANIFEST.json                 # 全文件 SHA256 清单（发布时生成）
-├── VERSION                       # 版本号（0.1.1）
+├── VERSION                       # 版本号（0.1.2）
 ├── LICENSE                       # MIT License
 ├── .gitignore                    # 忽略运行时/临时产物
 ├── .gitattributes                # LF 统一（text eol=lf）

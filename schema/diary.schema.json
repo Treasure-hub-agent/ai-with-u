@@ -11,7 +11,7 @@
         "properties": {
           "date": { "type": "string" },
           "timeline": { "type": "array", "items": { "type": "string" } },
-          "notes": { "type": "string" }
+          "notes": { "type": "array", "items": { "type": "string" } }
         }
       }
     }

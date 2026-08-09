@@ -1,6 +1,6 @@
 {
   "name": "@treasure-hub-agent/ai-with-u",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "AI-WITH-U —— 免费开源，你的 AI 聊天搭子。陪伴式角色对话 skill：零系统痕迹、时间差感知、日记无感记忆、新会话可接续，支持四种角色来源。",
   "license": "MIT",
   "author": "Treasure-hub-agent",
