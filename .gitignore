@@ -11,6 +11,11 @@ output/
 Thumbs.db
 .DS_Store
 
+# 数据文件（防未来扩展误入库）
+data/
+*.db
+*.sqlite
+
 # 编辑器
 .vscode/
 .idea/

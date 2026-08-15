@@ -1,85 +1,117 @@
 {
-    "version":  "0.1.2",
-    "generated":  "2026-08-09T12:51:09Z",
-    "root":  "ai-with-u",
-    "files":  {
-                  ".gitattributes":  {
-                                         "sha256":  "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
-                                         "bytes":  19
-                                     },
-                  ".gitignore":  {
-                                     "sha256":  "524fa963d0a7cc085c8eaecc602c7cb9c90a9dee0b10463522efab9a814e1dc5",
-                                     "bytes":  284
-                                 },
-                  "extended/character_card.md":  {
-                                                     "sha256":  "a3a7ce8aff1f3552b54b3d0d158df89ee3263aa0dfcf96ef8f9f48e25fedec33",
-                                                     "bytes":  8287
-                                                 },
-                  "extended/diary_memory.md":  {
-                                                   "sha256":  "a07393fa94801482759edbe6b0420829c0098bdd412f6538b558fdc206ee7193",
-                                                   "bytes":  5259
-                                               },
-                  "extended/distillation.md":  {
-                                                   "sha256":  "cf80459c4718dca1e478eb3f0852d2a95ef196303b5d71b9310e2858ae46b13b",
-                                                   "bytes":  10010
-                                               },
-                  "extended/quick_create.md":  {
-                                                   "sha256":  "811d7884c5f21dacce3f839cbb21cb696b9b343ef9e05486c939efe2798200e7",
-                                                   "bytes":  5628
-                                               },
-                  "extended/run_config.md":  {
-                                                 "sha256":  "223bbddf5098305a9361e96d4843375e4117c56457f6137538da5bbc309af67b",
-                                                 "bytes":  4175
-                                             },
-                  "extended/session_continuity.md":  {
-                                                         "sha256":  "6ddd5c04b879200de51f4e56e2a94bc9251bfa2949301d871142cb1c14b5dee1",
-                                                         "bytes":  7263
-                                                     },
-                  "LICENSE":  {
-                                  "sha256":  "92bc09632a498cab8a31ae187aec641e413de13e67c6d8e9c8c3c90bd980ef1e",
-                                  "bytes":  1075
-                              },
-                  "package.json":  {
-                                       "sha256":  "4f6aa8f9715886d6bf6275ba508965c8415c3484c1c7fd2f4821b6ca12ea5e6d",
-                                       "bytes":  707
-                                   },
-                  "README.md":  {
-                                    "sha256":  "e552ddb4454d6dfa53b2a4dfb7fb1fa08e6e891c0e64a6a9074049c944ce2322",
-                                    "bytes":  5235
-                                },
-                  "references/changelog.md":  {
-                                                  "sha256":  "d8f1deff99d11d23264f38e59f693f1ca1bc6801719c9108e8325443c2c7898e",
-                                                  "bytes":  3515
-                                              },
-                  "references/command_nav.md":  {
-                                                    "sha256":  "e07acfe369c92180e3703ac93848ff6e4d1fcffdbad79dc95928986636edfbfb",
-                                                    "bytes":  2431
-                                                },
-                  "references/human_chat_guide.md":  {
-                                                         "sha256":  "5e0c01b2f6b3442309e3d19db99921f161d25469314f82bd806aac9e120908c5",
-                                                         "bytes":  9914
-                                                     },
-                  "references/usage_guide.md":  {
-                                                    "sha256":  "c9fedb401fec2e8ca042c0766d17f22b5d746c077e57894aa6cdc222448455fa",
-                                                    "bytes":  822
-                                                },
-                  "schema/character_card.schema.json":  {
-                                                            "sha256":  "f96c617cc0b569e9f76ebde970335db1eab44f0b2e8f31ae73fae39da8078fcc",
-                                                            "bytes":  722
-                                                        },
-                  "schema/diary.schema.json":  {
-                                                   "sha256":  "b068ed16ee44931240aa753518a3ebdbd8880f4b4b88a2ce4e34b71660378202",
-                                                   "bytes":  597
-                                               },
-                  "SKILL.md":  {
-                                   "sha256":  "1ff902a54fdde7dbb00578c3108d64cfe4deb7a55390fa192de6b6f61585f759",
-                                   "bytes":  9133
-                               },
-                  "VERSION":  {
-                                  "sha256":  "297b50f08386d3521f8fdaf2f78eb8d9d0acdf452d2e61596905fba37208c792",
-                                  "bytes":  6
-                              }
-              },
-    "total_files":  19,
-    "total_bytes":  75082
+  "version": "0.1.3",
+  "generated": "2026-08-10T05:06:41Z",
+  "root": "ai-with-u",
+  "files": {
+    ".gitattributes": {
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c",
+      "bytes": 19
+    },
+    ".github/ISSUE_TEMPLATE/bug_report.md": {
+      "sha256": "253c3df2faa23f99c3e1b5b0248d68d3e6c1d6efc098cf88c3424495cfed59ee",
+      "bytes": 420
+    },
+    ".github/ISSUE_TEMPLATE/feature_request.md": {
+      "sha256": "f33bc9b5953dce197320a676b5911f795d6398f94721e85f4bb9047dc84ec32d",
+      "bytes": 345
+    },
+    ".github/PULL_REQUEST_TEMPLATE.md": {
+      "sha256": "8601e2939e4d640334cf1bf66434f35460b10be6b6578d37026c62861bfedb35",
+      "bytes": 455
+    },
+    ".gitignore": {
+      "sha256": "73edf2374a591614883c97fac15fbde91caa3adfe19a3825f2cfa6604f93167b",
+      "bytes": 350
+    },
+    "CHANGELOG.md": {
+      "sha256": "7678a836284792e8dc6f1c20f85a87eaea8b4a16b8df51dc99f653a29311dea4",
+      "bytes": 215
+    },
+    "CODE_OF_CONDUCT.md": {
+      "sha256": "6249d1d8a246e3aa78cad877f96049b770bfe4eebdb485d0a956ca7954caf7eb",
+      "bytes": 1357
+    },
+    "CONTRIBUTING.md": {
+      "sha256": "4e790be4530fe314ae0a3207a1b2d7f5051236bcd9c80033d924fcea2b8ca992",
+      "bytes": 1107
+    },
+    "LICENSE": {
+      "sha256": "92bc09632a498cab8a31ae187aec641e413de13e67c6d8e9c8c3c90bd980ef1e",
+      "bytes": 1075
+    },
+    "README.en.md": {
+      "sha256": "b47766fddd2d98de1b1d648db2902732e2125e53b905e38c0afbb8c6d3d0c8e5",
+      "bytes": 10263
+    },
+    "README.md": {
+      "sha256": "845602af991ce662e2cca4ee84cb55ce95691746a40939aa08cd1945ef837d7f",
+      "bytes": 9926
+    },
+    "SECURITY.md": {
+      "sha256": "55c23184554a944bde1a00cbd4cdf6097bd2d11029907b9929c6139daf031007",
+      "bytes": 565
+    },
+    "SKILL.md": {
+      "sha256": "9cc6eef10cf50fcde91a6618818b554c09aeae6deefbaed78b8b534072d72676",
+      "bytes": 9741
+    },
+    "VERSION": {
+      "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326",
+      "bytes": 6
+    },
+    "extended/character_card.md": {
+      "sha256": "60ecf52621f6c424e58a605a811743719292b5f145eda4308ebddd91ff1b15e0",
+      "bytes": 9563
+    },
+    "extended/diary_memory.md": {
+      "sha256": "d04b9cc07f8374521605c38da790b00b3701e407f767c047633eb813c850fa99",
+      "bytes": 5756
+    },
+    "extended/distillation.md": {
+      "sha256": "e1fd8d3d1d82fc2794b40bc553a879cc594db6fb8c24105ec91cbb37232cd20b",
+      "bytes": 12805
+    },
+    "extended/quick_create.md": {
+      "sha256": "a33e2dbc3ce2a0dae3d2bcc91e942aff5b6424acb679ce932d4365b894dc4699",
+      "bytes": 5851
+    },
+    "extended/run_config.md": {
+      "sha256": "dc802f33e55dd49c937fd3a10dbd6c1013d384a3a67cae4a07c2648f0032421e",
+      "bytes": 6614
+    },
+    "extended/session_continuity.md": {
+      "sha256": "2754d6987456d29cc03690dbab3b9b44a36d4d8f3887bafca7e4161ea9058515",
+      "bytes": 7441
+    },
+    "package.json": {
+      "sha256": "27fe95dda32e96f813e06f228436364be271b00be60af10dd01b6b7749a07910",
+      "bytes": 886
+    },
+    "references/changelog.md": {
+      "sha256": "69d3f4e8c17624106bf0f7a4d47a1c45acbeb725579b54072e6f27353c75c441",
+      "bytes": 5323
+    },
+    "references/command_nav.md": {
+      "sha256": "129c2b2dee39f830680c20f6f067383f07af698c41db74b354db0900ec0be93d",
+      "bytes": 2863
+    },
+    "references/human_chat_guide.md": {
+      "sha256": "f2c5a7523c1b7573c68c2cb441998af34834321d49695639e7c9c010a18d679d",
+      "bytes": 10421
+    },
+    "references/usage_guide.md": {
+      "sha256": "1012f669d57d6bcb244699a47553c4f01dfc21ea4bddfc6134c10eb595435d5f",
+      "bytes": 982
+    },
+    "schema/character_card.schema.json": {
+      "sha256": "604337396195954ee2ddaf07df086c410f02c5bb8f69e768c9cbdf37925b1f1d",
+      "bytes": 1185
+    },
+    "schema/diary.schema.json": {
+      "sha256": "b068ed16ee44931240aa753518a3ebdbd8880f4b4b88a2ce4e34b71660378202",
+      "bytes": 597
+    }
+  },
+  "total_files": 27,
+  "total_bytes": 106123
 }

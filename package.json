@@ -1,10 +1,17 @@
 {
   "name": "@treasure-hub-agent/ai-with-u",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "AI-WITH-U —— 免费开源，你的 AI 聊天搭子。陪伴式角色对话 skill：零系统痕迹、时间差感知、日记无感记忆、新会话可接续，支持四种角色来源。",
   "license": "MIT",
   "author": "Treasure-hub-agent",
-  "keywords": ["ai", "chat", "companion", "skill", "roleplay", "character"],
+  "keywords": [
+    "ai",
+    "chat",
+    "companion",
+    "skill",
+    "roleplay",
+    "character"
+  ],
   "files": [
     "SKILL.md",
     "README.md",
@@ -20,5 +27,9 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/Treasure-hub-agent/ai-with-u.git"
+  },
+  "homepage": "https://github.com/Treasure-hub-agent/ai-with-u",
+  "bugs": {
+    "url": "https://github.com/Treasure-hub-agent/ai-with-u/issues"
   }
 }
