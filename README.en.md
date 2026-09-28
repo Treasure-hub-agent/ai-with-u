@@ -1,13 +1,13 @@
 # AI-WITH-U
 
-> **AI-WITH-U v0.1.3** — open source. Your AI chat companion.
+> **AI-WITH-U v0.1.4** — open source. Your AI chat companion.
 > It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
 
 🌐 **[中文](README.md) | English**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.3-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.4-orange.svg)](VERSION)
 
 ---
 
@@ -22,16 +22,16 @@
 - 📔 **Effortless diary memory**: details worth remembering are automatically logged to a diary and referenced naturally in conversation; send "看看日记" (see diary) to view its notes
 - 🎭 **Four ways to bring a character in**: derive one from a work you love, create your own, use a character card, or import a local card
 - 🔄 **Continue across sessions**: switch clients and pick up right where you left off; "fresh start" anytime
-- 🔓 **Open source**: MIT License, all data lives on your own machine
+- 🔓 **Open source & your data**: MIT License — memories are local markdown: editable, exportable, portable across clients
 
 ---
 
-## What's New (v0.1.3)
+## What's New (v0.1.4)
 
-- 📖 **More ways to bring a character from a work**: name a work, upload a text file, paste a passage, give a link, or let the AI fetch context online (links read directly; proactive fetching always asks first)
-- 💬 **Actions separated from dialogue**: actions/moods marked with 「(action)」 brackets, clearly distinct from spoken lines
-- 📚 **Richer character roster**: import local cards in one step; delete characters you no longer want (card only by default, memories kept); edit diary entries in place
-- 📔 **Smarter diary memory**: mood entries stored individually (appended, never overwritten); "forget {thing}" deletes only the matched entry; when unsure, it records nothing — no fabricated information
+- 🪶 **The character speaks first**: once a character is created (custom / distilled / imported), they open with their own line in a separate message — you never have to figure out how to start. It is kept in the card and reused on a fresh start.
+- 🪶 **Leaner by design**: no new features this round — the rules are trimmed back to one thing: chatting like a real person. No progress bars, no visible numbers, no affection scores; how a relationship grows is up to the character's persona and the things you've told them.
+- 🧹 **Consistent wording**: the open-source statement now reads the same across package metadata and README.
+- 🧩 **Carried over (v0.1.1–v0.1.3)**: bring a character from a work (name / file / passage / link / online context); actions marked with 「(action)」 brackets; import or delete cards, edit diary entries in place; per-entry mood notes, per-entry "forget", and nothing recorded when unsure.
 
 > v0.1.1 recap: 19 test-driven fixes (targeted cleanup / mixed-intent detection / time-gap tier boundaries). Full history: [`references/changelog.md`](references/changelog.md)
 
@@ -78,10 +78,12 @@ TA: 📔 08-10 晴
 ## Install (one command)
 
 ```bash
-npx skills add Treasure-hub-agent/ai-with-u
+npx skills add Treasure-hub-agent/ai-with-u -g
 ```
 
-Works with Hermes / Claude Code / Cursor (Windows / macOS / Linux). Copy to your skills directory, restart the client, and send "打开 AIWU" (open AIWU) to begin.
+`-g` installs into your user-level skills directory (without it, files land in a project-level directory and the client won't see them after a restart); the installer asks which client to target. Works with Hermes / Claude Code / Cursor (Windows / macOS / Linux) — restart the client, then send "打开 AIWU" (open AIWU) to begin.
+
+> **Sanity check**: confirm `~/.hermes/skills/ai-with-u/SKILL.md` exists (for Claude Code, `~/.claude/skills/ai-with-u/`). If "打开 AIWU" does nothing, check this path first, then confirm the client was restarted; otherwise fall back to the manual copy below.
 
 > No `npx skills`? See "Manual copy" below.
 
@@ -111,7 +113,7 @@ Restart your client after copying, then send "打开 AIWU".
 
 ## Commands (English aliases)
 
-All commands currently default to Chinese. English aliases are on the roadmap; until then, tell your character in plain words what you'd like — or use the aliases below where noted.
+Commands default to Chinese; the English aliases below work too — say them naturally and the character follows.
 
 | Command (default) | English alias | What it does |
 | --- | --- | --- |
@@ -124,7 +126,9 @@ All commands currently default to Chinese. English aliases are on the roadmap; u
 | 忘记{thing} | forget {thing} | make it forget something |
 | 改日记{content} | edit diary {content} | edit a diary entry in place |
 | 删除{角色名} | delete {character} | remove a character from the roster |
-| 全新开始 | fresh start | start this conversation over |
+| 全新开始 | fresh start | start this conversation over (diary kept) |
+| 彻底重置 | reset everything | wipe session + diary and start over (irreversible) |
+| 换一句开场 | new opening line | ask for a different opening line |
 | 使用指南 | help | revisit this guide |
 
 ---
@@ -158,9 +162,13 @@ ai-with-u/
 ├── README.md                     # this file: guide + install + architecture
 ├── MANIFEST.json                 # SHA256 manifest of all files (generated at release)
 ├── package.json                  # npm release metadata
-├── VERSION                       # version number (0.1.3)
+├── VERSION                       # version number (0.1.4)
 ├── LICENSE                       # MIT License
 ├── .gitignore                    # ignores runtime/temp artifacts
+├── README.en.md                  # English README
+├── CHANGELOG.md                  # changelog (details in references/changelog.md)
+├── CONTRIBUTING.md / SECURITY.md / CODE_OF_CONDUCT.md  # contribution / security / conduct
+├── .github/                      # issue / PR templates
 ├── .gitattributes                # LF normalization (text eol=lf)
 ├── extended/                     # on-demand modules
 │   ├── character_card.md         # card format + roster management + import
@@ -197,7 +205,7 @@ ai-with-u/
 A: A regular prompt is a suggestion; AI-WITH-U is hard rules + a self-check list. Zero system traces, time-gap awareness, and diary memory all have enforced per-reply checks.
 
 **Q: Where does my chat data go?**
-A: Nowhere. All data stays on your machine in `~/.ai-with-u/` (configurable via `AIWU_STORAGE_ROOT`).
+A: Cards, diaries and session data stay on your machine in `~/.ai-with-u/` (configurable via `AIWU_STORAGE_ROOT`) — nothing is uploaded. A network read happens only when you hand over a link during distillation, or explicitly confirm an online lookup.
 
 **Q: Version history?**
 A: See `references/changelog.md`; `VERSION` file and SKILL.md frontmatter are authoritative.
@@ -206,5 +214,6 @@ A: See `references/changelog.md`; `VERSION` file and SKILL.md frontmatter are au
 
 ## Content & License
 
+- **Audience**: intended for adult users; intimate topics stay restrained per the SFW stance.
 - **Content**: SFW open-source edition. Sensitive topics are answered naturally according to the character's card and current relationship, with a consistent "restrained and subtle, to the point" stance — no explicit scenes.
-- **License**: MIT License © 2026 Treasure-hub-agent. Free to use, modify, distribute. See [LICENSE](LICENSE).
+- **License**: MIT License © 2026 Treasure-hub-agent. Open source — see [LICENSE](LICENSE).

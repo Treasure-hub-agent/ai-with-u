@@ -36,6 +36,9 @@
     },
     "lite": {
       "type": "boolean"
+    },
+    "opening": {
+      "type": "string"
     }
   },
   "if": {

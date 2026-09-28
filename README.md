@@ -1,13 +1,13 @@
 # AI-WITH-U
 
-> **AI-WITH-U v0.1.3** —— 开源，你的 AI 聊天搭子。
+> **AI-WITH-U v0.1.4** —— 开源，你的 AI 聊天搭子。
 > 手机里像住进一个老朋友：没有任务，没有进度条，只有聊天。
 > TA 会记得你说过的话，隔了一晚也知道你是刚睡醒。
 
 🌐 **中文 | [English](README.en.md)**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.3-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.4-orange.svg)](VERSION)
 
 ---
 
@@ -22,30 +22,29 @@
 - 📔 **日记无感记忆**：值得记的事悄悄写进日记，对话里自然引用；发「看看日记」就能看到 TA 悄悄记了什么
 - 🎭 **四种角色来源**：从喜欢的作品里请一位过来（蒸馏）、自己造一个、用角色卡、或导入本地卡
 - 🔄 **新会话接续**：换个客户端也能续上你们的故事；「全新开始」随时重新来过
-- 🔓 **开源**：MIT License，数据全部存在你自己电脑里
+- 🔓 **开源 · 数据是你的**：MIT License，记忆就是本机 markdown——可编辑、可导出，换客户端也带着走
 
 ---
 
-## 📌 当前版本动态（v0.1.3 · 角色更好找，对话更像真人）
+## 📌 当前版本动态（v0.1.4 · 回归聊天的本质）
 
 > 本栏目介绍最新版本的变化；历史版本见 `references/changelog.md`。
 
-**📖 从作品里请 TA，方式更多了**
-- 五种素材都能用：报作品名、上传文本文件、直接贴一段文字、给个链接、或让 AI 联网补充
-- 给链接就直接读，不用再确认；AI 主动联网会先问过你
+**🪶 建好角色，TA 先开口**
+- 建卡（自创 / 蒸馏 / 导入）完成后，TA 用一句自己的招呼开场，你不用想怎么开口；这句存在卡里，全新开始时还是它
 
-**💬 动作和台词分开了**
-- 动作/神态用「（动作）」括号标出，跟说的话清晰区分，不再混在一起
+**🪶 更精简：只做一件事**
+- 本版不加新功能，把规则收敛回「像真人一样陪聊」：没有进度条、不显示数值、也没有好感度加分，关系怎么走交给 TA 的人设和你俩聊过的那些事
+- 每轮要读的规则更少，回复更不容易被框架带跑
 
-**📚 角色簿更完整**
-- 主菜单新增「导入角色卡」：本地已有的卡一键接进来
-- 新增「删除{角色名}」：不想要的角色可以移走（默认只删卡，记忆保留）
-- 新增「改日记{内容}」：日记记错了可以就地改一条
+**🧹 口径统一**
+- 开源声明在包元数据与 README 中保持一致
 
-**📔 日记记忆更聪明**
-- 心情札记按条存储：同一天多条心情各自成条，追加不覆盖
-- 「忘记{事}」按条删除：只删命中那条，保留同条其他内容
-- 不确定的事宁可不记，不瞎记
+**🧩 已有能力（v0.1.1–v0.1.3 延续）**
+- 从作品里请 TA：报作品名 / 传文本文件 / 贴一段文字 / 给链接 / 联网补充
+- 动作与台词分开：动作/神态用「（动作）」括号标出
+- 角色簿：导入本地卡、删除角色、就地改日记
+- 日记记忆：心情按条存储、「忘记{事}」按条删除、不确定的事宁可不记
 
 **🧹 v0.1.1 回顾**：测试驱动修复 19 项（忘记定点清理 / 混合意图判定 / 时间差档位边界 等），详见 `references/changelog.md`
 
@@ -68,10 +67,12 @@
 ## 安装（一条命令）
 
 ```bash
-npx skills add Treasure-hub-agent/ai-with-u
+npx skills add Treasure-hub-agent/ai-with-u -g
 ```
 
-支持 Hermes / Claude Code / Cursor（Windows / macOS / Linux）。复制到 skills 目录后重启客户端，发「打开 AIWU」即可开局。
+`-g` 装到用户级 skills 目录（不加则装到当前目录的项目级目录，重启客户端会看不到）；安装过程会让你选客户端。支持 Hermes / Claude Code / Cursor（Windows / macOS / Linux），装完重启客户端，发「打开 AIWU」即可开局。
+
+> **装好后自检**：确认 `~/.hermes/skills/ai-with-u/SKILL.md` 存在（Claude Code 对应 `~/.claude/skills/ai-with-u/`）。发「打开 AIWU」没反应时，先查这一步、再确认客户端已重启；仍不行改用手动复制。
 
 > 没有 `npx skills`？见下方「手动复制」。
 
@@ -137,7 +138,9 @@ npx skills add Treasure-hub-agent/ai-with-u
 - 🗑️ 忘记{事情} —— 让 TA 忘掉某件事
 - ✏️ 改日记{内容} —— 就地改掉 TA 日记里的一条
 - 🗑️ 删除{角色名} —— 把 TA 从角色簿里移除
-- 🌱 全新开始 —— 重新开始这段对话
+- 🌱 全新开始 —— 重新开始这段对话（日记保留）
+- ♻️ 彻底重置 —— 连日记一起清空，从头来过（不可撤销）
+- 🪶 换一句开场 —— 让 TA 换一句开场白
 - 📖 使用指南 —— 再看一遍这里
 
 聊得开心就好。
@@ -158,9 +161,13 @@ ai-with-u/
 ├── README.md                     # 本文件：使用指南 + 安装 + 架构
 ├── MANIFEST.json                 # 全文件 SHA256 清单（发布时生成）
 ├── package.json                  # npm 发布元数据
-├── VERSION                       # 版本号（0.1.3）
+├── VERSION                       # 版本号（0.1.4）
 ├── LICENSE                       # MIT License
 ├── .gitignore                    # 忽略运行时/临时产物
+├── README.en.md                  # 英文版 README
+├── CHANGELOG.md                  # 更新日志（详见 references/changelog.md）
+├── CONTRIBUTING.md / SECURITY.md / CODE_OF_CONDUCT.md  # 贡献 / 安全 / 行为准则
+├── .github/                      # Issue / PR 模板
 ├── .gitattributes                # LF 统一（text eol=lf）
 ├── extended/                     # 按需加载模块
 │   ├── character_card.md         # 角色卡格式 + 卡库管理 + 导入
@@ -197,7 +204,7 @@ ai-with-u/
 A: 普通 prompt 是「建议」，AI-WITH-U 是「硬规则 + 自检清单」：零系统痕迹、时间差感知、日记记忆都有强制自检步骤，AI 每轮回复前逐项核对。
 
 **Q: 我的聊天数据会传到哪里？**
-A: 哪里都不传。全部数据存在你自己电脑的 `~/.ai-with-u/`（可配置 `AIWU_STORAGE_ROOT` 覆盖路径）。
+A: 角色卡、日记、会话记录都只存在你自己电脑的 `~/.ai-with-u/`（可配置 `AIWU_STORAGE_ROOT` 覆盖路径），不会上传。只有你在蒸馏时主动给链接、或明确确认后联网检索，才会发起一次读取。
 
 **Q: 版本历史？**
 A: 见 `references/changelog.md`，版本号以 `VERSION` 文件与 `SKILL.md` frontmatter 为准。
@@ -206,5 +213,6 @@ A: 见 `references/changelog.md`，版本号以 `VERSION` 文件与 `SKILL.md` f
 
 ## 内容说明与版权
 
+- **适用对象**：面向成年用户；亲密话题按 SFW 口径克制处理。
 - **内容说明**：SFW 开源版。敏感话题按角色卡性格与当前关系自然回应，口径统一为「克制含蓄、点到为止」，不展开具体描写场景。
 - **版权**：MIT License（Copyright (c) 2026 Treasure-hub-agent），可自由使用、修改、分发。详见 [LICENSE](LICENSE)。

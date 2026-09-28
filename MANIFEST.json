@@ -1,6 +1,6 @@
 {
-  "version": "0.1.3",
-  "generated": "2026-08-10T05:06:41Z",
+  "version": "0.1.4",
+  "generated": "2026-09-28T15:10:21Z",
   "root": "ai-with-u",
   "files": {
     ".gitattributes": {
@@ -24,7 +24,7 @@
       "bytes": 350
     },
     "CHANGELOG.md": {
-      "sha256": "7678a836284792e8dc6f1c20f85a87eaea8b4a16b8df51dc99f653a29311dea4",
+      "sha256": "c84fc4655305d0a4d61852ac2cb2319af611336f72685771d24ceb991eca0bca",
       "bytes": 215
     },
     "CODE_OF_CONDUCT.md": {
@@ -40,72 +40,72 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "b47766fddd2d98de1b1d648db2902732e2125e53b905e38c0afbb8c6d3d0c8e5",
-      "bytes": 10263
+      "sha256": "4ddc3052ed57d8676aeb1868861b714b6c4cd5ebe471d64ddfa4a3335658aca1",
+      "bytes": 11611
     },
     "README.md": {
-      "sha256": "845602af991ce662e2cca4ee84cb55ce95691746a40939aa08cd1945ef837d7f",
-      "bytes": 9926
+      "sha256": "4eaa1af15e0ed014fe391984f814269c7e511a3e2e3f796c5aa60b33b4c96364",
+      "bytes": 11103
     },
     "SECURITY.md": {
       "sha256": "55c23184554a944bde1a00cbd4cdf6097bd2d11029907b9929c6139daf031007",
       "bytes": 565
     },
     "SKILL.md": {
-      "sha256": "9cc6eef10cf50fcde91a6618818b554c09aeae6deefbaed78b8b534072d72676",
-      "bytes": 9741
+      "sha256": "a3f6797838bc4b14d2e362a166798f510e6c824eae5e92a1a86715b6d4012fa8",
+      "bytes": 9798
     },
     "VERSION": {
-      "sha256": "2d2454ef0edeb462a6ce8b25d387aaa74df08093d5cea0428a10ce55510c6326",
+      "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7",
       "bytes": 6
     },
     "extended/character_card.md": {
-      "sha256": "60ecf52621f6c424e58a605a811743719292b5f145eda4308ebddd91ff1b15e0",
-      "bytes": 9563
+      "sha256": "494b09b3cb16e4bcbc074b812f5407d3f5b8700ed8874483e113bbd338d5207e",
+      "bytes": 11653
     },
     "extended/diary_memory.md": {
-      "sha256": "d04b9cc07f8374521605c38da790b00b3701e407f767c047633eb813c850fa99",
-      "bytes": 5756
+      "sha256": "b9f04fac4d2bda54c7f1f26c63116e2ff4a1cdec6af4f9f4af51162f2a069c8a",
+      "bytes": 5782
     },
     "extended/distillation.md": {
-      "sha256": "e1fd8d3d1d82fc2794b40bc553a879cc594db6fb8c24105ec91cbb37232cd20b",
-      "bytes": 12805
+      "sha256": "5e2f619a8780e422f45720072147f331784ea59e3aaafe24cab6ecc59064f215",
+      "bytes": 12951
     },
     "extended/quick_create.md": {
-      "sha256": "a33e2dbc3ce2a0dae3d2bcc91e942aff5b6424acb679ce932d4365b894dc4699",
-      "bytes": 5851
+      "sha256": "c9d0001d43f8e0c4b4827648b70653b81af28c33ba092fe099c240803d05e074",
+      "bytes": 6042
     },
     "extended/run_config.md": {
       "sha256": "dc802f33e55dd49c937fd3a10dbd6c1013d384a3a67cae4a07c2648f0032421e",
       "bytes": 6614
     },
     "extended/session_continuity.md": {
-      "sha256": "2754d6987456d29cc03690dbab3b9b44a36d4d8f3887bafca7e4161ea9058515",
-      "bytes": 7441
+      "sha256": "bac4f3b5446168f6465cd79c1e0d389b0dd2340fcc4cebfa23f831228bedd43b",
+      "bytes": 6174
     },
     "package.json": {
-      "sha256": "27fe95dda32e96f813e06f228436364be271b00be60af10dd01b6b7749a07910",
-      "bytes": 886
+      "sha256": "0b1dd2ddc3061e8d988f5052e433e3db370355826c85ae58eefc1fae2139aac0",
+      "bytes": 900
     },
     "references/changelog.md": {
-      "sha256": "69d3f4e8c17624106bf0f7a4d47a1c45acbeb725579b54072e6f27353c75c441",
-      "bytes": 5323
+      "sha256": "2e753071879d4d51ce2b4874fca8a19c103c4c5c0a2c31f6ff4e21f9d1fee0a3",
+      "bytes": 7425
     },
     "references/command_nav.md": {
-      "sha256": "129c2b2dee39f830680c20f6f067383f07af698c41db74b354db0900ec0be93d",
-      "bytes": 2863
+      "sha256": "c495ed6387c8edeac36029fd1d6f0f9a8331b915603bd5d909d33201e84d5797",
+      "bytes": 3914
     },
     "references/human_chat_guide.md": {
-      "sha256": "f2c5a7523c1b7573c68c2cb441998af34834321d49695639e7c9c010a18d679d",
-      "bytes": 10421
+      "sha256": "18b304329ce69afbb1c0ed2b02eb53b1b33bda9a975f10dc844ff20a8eaa880d",
+      "bytes": 10548
     },
     "references/usage_guide.md": {
-      "sha256": "1012f669d57d6bcb244699a47553c4f01dfc21ea4bddfc6134c10eb595435d5f",
-      "bytes": 982
+      "sha256": "e11d6c67b3f86e2831b211be01bb6dea88e576ecc863ce3bb8003fc13ea59767",
+      "bytes": 1130
     },
     "schema/character_card.schema.json": {
-      "sha256": "604337396195954ee2ddaf07df086c410f02c5bb8f69e768c9cbdf37925b1f1d",
-      "bytes": 1185
+      "sha256": "021f796abcc66be4066fc0c0369b0a096249c1851ac1d022b2608074a6520d55",
+      "bytes": 1232
     },
     "schema/diary.schema.json": {
       "sha256": "b068ed16ee44931240aa753518a3ebdbd8880f4b4b88a2ce4e34b71660378202",
@@ -113,5 +113,5 @@
     }
   },
   "total_files": 27,
-  "total_bytes": 106123
+  "total_bytes": 113388
 }
