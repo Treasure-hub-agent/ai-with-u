@@ -1,5 +1,9 @@
 # AI-WITH-U
 
+<p align="center">
+  <img src="assets/hero.webp" alt="AI WITH U · 手机里像住进一个老朋友" width="100%">
+</p>
+
 > **AI-WITH-U v0.1.4** —— 开源，你的 AI 聊天搭子。
 > 手机里像住进一个老朋友：没有任务，没有进度条，只有聊天。
 > TA 会记得你说过的话，隔了一晚也知道你是刚睡醒。
@@ -161,6 +165,9 @@ ai-with-u/
 ├── README.md                     # 本文件：使用指南 + 安装 + 架构
 ├── MANIFEST.json                 # 全文件 SHA256 清单（发布时生成）
 ├── package.json                  # npm 发布元数据
+├── assets/                       # 视觉资产
+│   ├── hero.webp                 # README 头图（网页用，39 KB）
+│   └── hero.png                  # 头图源文件
 ├── VERSION                       # 版本号（0.1.4）
 ├── LICENSE                       # MIT License
 ├── .gitignore                    # 忽略运行时/临时产物

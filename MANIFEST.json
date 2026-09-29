@@ -1,6 +1,6 @@
 {
   "version": "0.1.4",
-  "generated": "2026-09-28T15:10:21Z",
+  "generated": "2026-09-29T07:20:58Z",
   "root": "ai-with-u",
   "files": {
     ".gitattributes": {
@@ -40,12 +40,12 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "4ddc3052ed57d8676aeb1868861b714b6c4cd5ebe471d64ddfa4a3335658aca1",
-      "bytes": 11611
+      "sha256": "7342f4ddfdf282ac055727b3ce7f9826e666563cc1ec38ceef1df501e836c333",
+      "bytes": 11920
     },
     "README.md": {
-      "sha256": "4eaa1af15e0ed014fe391984f814269c7e511a3e2e3f796c5aa60b33b4c96364",
-      "bytes": 11103
+      "sha256": "f6642a4afcdd29e71ebf4dfd1cc177e5dad829b2ff254dccda40a35345263d77",
+      "bytes": 11421
     },
     "SECURITY.md": {
       "sha256": "55c23184554a944bde1a00cbd4cdf6097bd2d11029907b9929c6139daf031007",
@@ -58,6 +58,14 @@
     "VERSION": {
       "sha256": "8a3dad16d348c163566a456fcf650d85d7aeeda5e53d01ee1fa8dc15212915a7",
       "bytes": 6
+    },
+    "assets/hero.png": {
+      "sha256": "05af22abf060768c43a2827b22da231a778f9fd943d6577f718ad4f950e34d71",
+      "bytes": 499142
+    },
+    "assets/hero.webp": {
+      "sha256": "d3e474527c7e933dbebe5dbb0a817747898603bff67d85697c168ed1821530c5",
+      "bytes": 40758
     },
     "extended/character_card.md": {
       "sha256": "494b09b3cb16e4bcbc074b812f5407d3f5b8700ed8874483e113bbd338d5207e",
@@ -84,8 +92,8 @@
       "bytes": 6174
     },
     "package.json": {
-      "sha256": "0b1dd2ddc3061e8d988f5052e433e3db370355826c85ae58eefc1fae2139aac0",
-      "bytes": 900
+      "sha256": "dc450ea2bac0023d7f7574d519ec2ce9ed3458db8ab37e306f9283156555edc7",
+      "bytes": 914
     },
     "references/changelog.md": {
       "sha256": "2e753071879d4d51ce2b4874fca8a19c103c4c5c0a2c31f6ff4e21f9d1fee0a3",
@@ -112,6 +120,6 @@
       "bytes": 597
     }
   },
-  "total_files": 27,
-  "total_bytes": 113388
+  "total_files": 29,
+  "total_bytes": 653929
 }

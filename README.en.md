@@ -1,5 +1,9 @@
 # AI-WITH-U
 
+<p align="center">
+  <img src="assets/hero.webp" alt="AI WITH U · an old friend living in your phone" width="100%">
+</p>
+
 > **AI-WITH-U v0.1.4** — open source. Your AI chat companion.
 > It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
@@ -162,6 +166,9 @@ ai-with-u/
 ├── README.md                     # this file: guide + install + architecture
 ├── MANIFEST.json                 # SHA256 manifest of all files (generated at release)
 ├── package.json                  # npm release metadata
+├── assets/                       # visual assets
+│   ├── hero.webp                 # README hero (web, 39 KB)
+│   └── hero.png                  # hero source file
 ├── VERSION                       # version number (0.1.4)
 ├── LICENSE                       # MIT License
 ├── .gitignore                    # ignores runtime/temp artifacts
