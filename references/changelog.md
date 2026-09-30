@@ -137,4 +137,4 @@
 **交互与工程**
 - 交互模式：纯文本 / 文本+动作（默认），中途可切换；纯文本模式动作三选一替代
 - 分层架构：SKILL.md P0 常驻 + extended/ + references/ + schema/；VERSION/MANIFEST/README 三处版本一致
-- 开源发布：MIT License（内容尺度口径见 v0.1.6 条目）
+- 开源发布：MIT License（初版内容边界口径较保守，后于 v0.1.6 交还用户，见本文件 v0.1.6 条目）

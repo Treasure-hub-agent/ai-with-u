@@ -41,13 +41,11 @@
 **Carried over from v0.1.5 (shipped together with this version)**
 
 - 🛡️ Bilingual [DISCLAIMER](DISCLAIMER.md) (AI-generated content / data & privacy / no warranty and more, seven sections); copyright notice added to skill metadata and docs. Lite-card definition, reset behavior, and time-gap priorities each have one authoritative rule.
-- 🔓 **You set the limits**: content scale is yours to decide — no censorship, no gating, no refusal templates.
+- 🔓 **You set the limits**: content scale is yours to decide — no censorship, no gating, no refusal templates. Intimate and NSFW storylines unfold naturally, and how they develop is up to you and your character.
 
 *(Previous highlights below)*
 
-- 🪶 **The character speaks first**: once a character is created (custom / distilled / imported), they open with their own line in a separate message — you never have to figure out how to start. It is kept in the card and reused on a fresh start.
-- 🪶 **Leaner by design**: rules trimmed back to one thing — chatting like a real person. No progress bars, no visible numbers, no affection scores; how a relationship grows is up to the character's persona and the things you've told them.
-- 🧩 **Carried over (v0.1.1–v0.1.3)**: bring a character from a work (name / file / passage / link / online context); actions marked with 「(action)」 brackets; import or delete cards, edit diary entries in place; per-entry mood notes, per-entry "forget", and nothing recorded when unsure.
+- 🧩 **Carried over (v0.1.1–v0.1.4)**: bring a character from a work (name / file / passage / link / online context); actions marked with 「(action)」 brackets; import local cards (PNG / CHARX), delete characters, edit diary entries in place; per-entry mood notes, per-entry "forget", and nothing recorded when unsure.
 
 > v0.1.1 recap: 19 test-driven fixes (targeted cleanup / mixed-intent detection / time-gap tier boundaries). Full history: [`references/changelog.md`](references/changelog.md)
 
@@ -135,7 +133,11 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | --- | --- | --- |
 | 看看日记 | see diary | open its diary |
 | 切换纯文本 / 切换动作 | text mode / action mode | switch chat style |
+| 打开 AIWU / 陪我聊天 / 加载陪伴包 | open AIWU / chat with me | activate the skill and show the main menu |
+| 回主菜单 | main menu | back to the main menu |
 | 继续 | continue | resume the last conversation |
+| 继续蒸馏 | continue distilling | resume an interrupted distillation |
+| 跑全场景 | run full suite | run all 8 playtest scenes (distillation) |
 | 关系 | relationship | see where you two stand |
 | 角色卡 | character card | view the character's card |
 | 改{name}的{field} | edit {name}'s {field} | fine-tune the card |
@@ -144,7 +146,7 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | 删除{角色名} | delete {character} | remove a character from the roster |
 | 全新开始 | fresh start | start this conversation over (diary kept) |
 | 彻底重置 | reset everything | wipe session + diary and start over (irreversible) |
-| 换一句开场 | new opening line | ask for a different opening line |
+| 换一句开场 | new opening line | swap to another one of its prepared openings |
 | 使用指南 | help | revisit this guide |
 
 ---
@@ -229,7 +231,7 @@ ai-with-u/
 | Capability | Required? | When unsupported |
 | --- | --- | --- |
 | File read/write | ✅ Required | Silently degrades to pure-context mode (memory not persisted, chat continues) |
-| Multi-message rendering (`||`-separated) | ⚠️ Optional | Falls back to blank-line separation; separators never leak as visible characters |
+| Multi-message rendering (`\|\|`-separated) | ⚠️ Optional | Falls back to blank-line separation; separators never leak as visible characters |
 | Time-gap awareness | ⚠️ Optional | Uses time-of-day greetings; never outputs "gap detected" system-speak |
 
 ---

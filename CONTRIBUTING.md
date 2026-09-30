@@ -38,6 +38,7 @@
   EOF
   ```
 
+- `MANIFEST.json` 是**仓库清单**（含 `.git*`、`.github/**`、`assets/hero.png` 等不随 npm 包发布的文件），与 `package.json` 的 `files` 白名单不是一回事：校验仓库完整性看 MANIFEST，校验 npm 包内容以 `npm pack --dry-run` 为准
 - 版本号变更时，请同步六处版本源：`VERSION` / `package.json` / `SKILL.md`（frontmatter）/ `README.md` + `README.en.md` / `MANIFEST.json` / `CHANGELOG.md`（详细条目写入 `references/changelog.md`）
 - 提交信息使用简洁的约定式前缀（`feat:` / `fix:` / `docs:` / `chore:`）
 
