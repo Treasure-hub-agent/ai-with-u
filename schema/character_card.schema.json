@@ -1,44 +1,55 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "ai-with-u character card",
+  "title": "ai-with-u character card（card.json；七字段键映射见 extended/character_card.md §1.3，lite 口径见 §1.4）",
   "type": "object",
   "properties": {
     "name": {
-      "type": "string"
+      "type": "string",
+      "description": "角色名（= ▎基本信息 · 姓名）"
     },
     "basic": {
-      "type": "object"
+      "type": "object",
+      "description": "▎基本信息：姓名 / 年龄 / 身份 / 一句话背景"
     },
     "personality": {
-      "type": "object"
+      "type": "object",
+      "description": "▎性格核心：关键词（3-5）/ 内在矛盾 / 对待亲近之人的态度"
     },
     "voice": {
-      "type": "object"
+      "type": "object",
+      "description": "▎声线基因（灵魂字段）：对话节奏 / 爱用句式 / 称呼 / 情绪口头禅 / 禁忌词 / 非语言小动作"
     },
     "relationship": {
-      "type": "object"
+      "type": "object",
+      "description": "▎关系定位：关系起点 / 角色怎么称呼用户 / 用户怎么称呼角色"
     },
     "memory_anchor": {
-      "type": "object"
+      "type": "object",
+      "description": "▎记忆锚点：角色背景故事要点（对话可自然引用）"
     },
     "dynamic_state": {
-      "type": "object"
+      "type": "object",
+      "description": "▎动态状态：当前情绪 / 近况 / 此刻在做什么（随对话更新）"
     },
     "interaction_pref": {
-      "type": "object"
+      "type": "object",
+      "description": "▎互动偏好：回复长度倾向 / 表情使用 / 话题舒适区与雷区"
     },
     "source": {
       "enum": [
         "distill",
         "custom",
         "import"
-      ]
+      ],
+      "description": "角色来源"
     },
     "lite": {
-      "type": "boolean"
+      "type": "boolean",
+      "description": "轻量卡标记（口径见 extended/character_card.md §1.4）"
     },
     "opening": {
-      "type": "string"
+      "type": "string",
+      "description": "开场白（首次登场第一句）"
     }
   },
   "if": {
@@ -52,6 +63,7 @@
     }
   },
   "then": {
+    "description": "lite 轻量卡：五必填齐全即可",
     "required": [
       "name",
       "basic",
@@ -61,6 +73,7 @@
     ]
   },
   "else": {
+    "description": "完整卡：七字段 + name + source（九必填）",
     "required": [
       "name",
       "basic",

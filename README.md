@@ -4,14 +4,14 @@
   <img src="assets/hero.webp" alt="AI WITH U · 手机里像住进一个老朋友" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.4** —— 开源，你的 AI 聊天搭子。
+> **AI-WITH-U v0.1.5** —— 开源，你的 AI 聊天搭子。
 > 手机里像住进一个老朋友：没有任务，没有进度条，只有聊天。
 > TA 会记得你说过的话，隔了一晚也知道你是刚睡醒。
 
 🌐 **中文 | [English](README.en.md)**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.4-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.5-orange.svg)](VERSION)
 
 ---
 
@@ -30,9 +30,13 @@
 
 ---
 
-## 📌 当前版本动态（v0.1.4 · 回归聊天的本质）
+## 📌 当前版本动态（v0.1.5 · 合规与打磨）
 
 > 本栏目介绍最新版本的变化；历史版本见 `references/changelog.md`。
+
+**🛡️ 开源合规与一致性**
+- 新增中英双语[免责声明](DISCLAIMER.md)（AI 生成内容 / 数据与隐私 / 无担保 等七章）；版权信息入 skill 元数据与文档落款
+- 规则口径打磨：轻量卡（lite）统一定义、重置判定、时间差优先级等在一处说清，跑起来更稳
 
 **🪶 建好角色，TA 先开口**
 - 建卡（自创 / 蒸馏 / 导入）完成后，TA 用一句自己的招呼开场，你不用想怎么开口；这句存在卡里，全新开始时还是它
@@ -74,9 +78,9 @@
 npx skills add Treasure-hub-agent/ai-with-u -g
 ```
 
-`-g` 装到用户级 skills 目录（不加则装到当前目录的项目级目录，重启客户端会看不到）；安装过程会让你选客户端。支持 Hermes / Claude Code / Cursor（Windows / macOS / Linux），装完重启客户端，发「打开 AIWU」即可开局。
+`-g` 装到用户级 skills 目录（不加则装到当前目录的项目级目录，部分客户端重启后不加载）；安装过程会让你选客户端。支持 Hermes / Claude Code / Cursor（Windows / macOS / Linux），装完重启客户端，发「打开 AIWU」即可开局。
 
-> **装好后自检**：确认 `~/.hermes/skills/ai-with-u/SKILL.md` 存在（Claude Code 对应 `~/.claude/skills/ai-with-u/`）。发「打开 AIWU」没反应时，先查这一步、再确认客户端已重启；仍不行改用手动复制。
+> **装好后自检**：确认 `~/.hermes/skills/ai-with-u/SKILL.md` 存在（Claude Code 对应 `~/.claude/skills/ai-with-u/`，Cursor 对应 `~/.cursor/skills/ai-with-u/`）。发「打开 AIWU」没反应时，先查这一步、再确认客户端已重启；仍不行改用手动复制。
 
 > 没有 `npx skills`？见下方「手动复制」。
 
@@ -132,7 +136,7 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 - 📔 TA 会记得你说过的话；隔了一晚，也知道你是刚睡醒
 - 🔍 想看看 TA 悄悄记了什么？发「看看日记」
 
-**可用指令**
+**可用指令**（英文别名对照见 [README.en.md](README.en.md) 的 Commands 表）
 - 📔 看看日记 —— 打开 TA 的日记本
 - 💬 切换纯文本 / 切换动作 —— 换一种聊天方式
 - 🔄 继续 —— 续上上次的对话
@@ -166,10 +170,12 @@ ai-with-u/
 ├── MANIFEST.json                 # 全文件 SHA256 清单（发布时生成）
 ├── package.json                  # npm 发布元数据
 ├── assets/                       # 视觉资产
-│   ├── hero.webp                 # README 头图（网页用，39 KB）
+│   ├── hero.webp                 # README 头图（网页用，约 40 KB）
 │   └── hero.png                  # 头图源文件
-├── VERSION                       # 版本号（0.1.4）
+├── VERSION                       # 版本号（0.1.5）
 ├── LICENSE                       # MIT License
+├── DISCLAIMER.md                 # 免责声明（中文）
+├── DISCLAIMER.en.md              # 免责声明（English）
 ├── .gitignore                    # 忽略运行时/临时产物
 ├── README.en.md                  # 英文版 README
 ├── CHANGELOG.md                  # 更新日志（详见 references/changelog.md）
@@ -222,4 +228,5 @@ A: 见 `references/changelog.md`，版本号以 `VERSION` 文件与 `SKILL.md` f
 
 - **适用对象**：面向成年用户；亲密话题按 SFW 口径克制处理。
 - **内容说明**：SFW 开源版。敏感话题按角色卡性格与当前关系自然回应，口径统一为「克制含蓄、点到为止」，不展开具体描写场景。
+- **AI 生成声明**：角色对话、日记与角色卡内容均由 AI 生成，角色为虚构，详见 [免责声明](DISCLAIMER.md)（English: [DISCLAIMER.en.md](DISCLAIMER.en.md)）。
 - **版权**：MIT License（Copyright (c) 2026 Treasure-hub-agent），可自由使用、修改、分发。详见 [LICENSE](LICENSE)。

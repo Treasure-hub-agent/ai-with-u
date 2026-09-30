@@ -1,6 +1,5 @@
-# 运行时数据（用户目录，仓库内兜底忽略）
+# 运行时数据（用户目录，仓库内兜底忽略；存储根可用环境变量 AIWU_STORAGE_ROOT 自定义）
 .ai-with-u/
-AIWU_STORAGE_ROOT/
 
 # 蒸馏中间产物
 output/

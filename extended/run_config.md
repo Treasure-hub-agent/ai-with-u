@@ -82,7 +82,7 @@
 └── characters/<角色名>/
     ├── card.json                  # 角色卡
     ├── diary.md                   # 日记（长期记忆）
-    └── session.json               # 会话状态（滚动摘要/情绪/未竟话题/交互模式/亲密度/last_ts）
+    └── session.json               # 会话状态（滚动摘要/情绪/未竟话题/交互模式/亲密度/累计轮次/last_ts）
 ```
 
 - `_index.json` 索引全部角色；`characters/<角色名>/` 下每角色三件套：`card.json` / `diary.md` / `session.json`

@@ -4,14 +4,14 @@
   <img src="assets/hero.webp" alt="AI WITH U · an old friend living in your phone" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.4** — open source. Your AI chat companion.
+> **AI-WITH-U v0.1.5** — open source. Your AI chat companion.
 > It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
 
 🌐 **[中文](README.md) | English**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.4-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.5-orange.svg)](VERSION)
 
 ---
 
@@ -30,7 +30,11 @@
 
 ---
 
-## What's New (v0.1.4)
+## What's New (v0.1.5)
+
+- 🛡️ **Open-source compliance & consistency**: added bilingual [DISCLAIMER](DISCLAIMER.md) (AI-generated content / data & privacy / no warranty and more, seven sections); copyright notice added to skill metadata and docs. Lite-card definition, reset behavior, and time-gap priorities now share one authoritative rule each.
+
+*(Previous highlights below)*
 
 - 🪶 **The character speaks first**: once a character is created (custom / distilled / imported), they open with their own line in a separate message — you never have to figure out how to start. It is kept in the card and reused on a fresh start.
 - 🪶 **Leaner by design**: no new features this round — the rules are trimmed back to one thing: chatting like a real person. No progress bars, no visible numbers, no affection scores; how a relationship grows is up to the character's persona and the things you've told them.
@@ -85,9 +89,9 @@ TA: 📔 08-10 晴
 npx skills add Treasure-hub-agent/ai-with-u -g
 ```
 
-`-g` installs into your user-level skills directory (without it, files land in a project-level directory and the client won't see them after a restart); the installer asks which client to target. Works with Hermes / Claude Code / Cursor (Windows / macOS / Linux) — restart the client, then send "打开 AIWU" (open AIWU) to begin.
+`-g` installs into your user-level skills directory (without it, files land in a project-level directory, which some clients stop loading after a restart); the installer asks which client to target. Works with Hermes / Claude Code / Cursor (Windows / macOS / Linux) — restart the client, then send "打开 AIWU" (open AIWU) to begin.
 
-> **Sanity check**: confirm `~/.hermes/skills/ai-with-u/SKILL.md` exists (for Claude Code, `~/.claude/skills/ai-with-u/`). If "打开 AIWU" does nothing, check this path first, then confirm the client was restarted; otherwise fall back to the manual copy below.
+> **Sanity check**: confirm `~/.hermes/skills/ai-with-u/SKILL.md` exists (for Claude Code, `~/.claude/skills/ai-with-u/`; for Cursor, `~/.cursor/skills/ai-with-u/`). If "打开 AIWU" does nothing, check this path first, then confirm the client was restarted; otherwise fall back to the manual copy below.
 
 > No `npx skills`? See "Manual copy" below.
 
@@ -167,10 +171,12 @@ ai-with-u/
 ├── MANIFEST.json                 # SHA256 manifest of all files (generated at release)
 ├── package.json                  # npm release metadata
 ├── assets/                       # visual assets
-│   ├── hero.webp                 # README hero (web, 39 KB)
+│   ├── hero.webp                 # README hero (web, about 40 KB)
 │   └── hero.png                  # hero source file
-├── VERSION                       # version number (0.1.4)
+├── VERSION                       # version number (0.1.5)
 ├── LICENSE                       # MIT License
+├── DISCLAIMER.md                 # Disclaimer (Chinese)
+├── DISCLAIMER.en.md              # Disclaimer (English)
 ├── .gitignore                    # ignores runtime/temp artifacts
 ├── README.en.md                  # English README
 ├── CHANGELOG.md                  # changelog (details in references/changelog.md)
@@ -223,4 +229,5 @@ A: See `references/changelog.md`; `VERSION` file and SKILL.md frontmatter are au
 
 - **Audience**: intended for adult users; intimate topics stay restrained per the SFW stance.
 - **Content**: SFW open-source edition. Sensitive topics are answered naturally according to the character's card and current relationship, with a consistent "restrained and subtle, to the point" stance — no explicit scenes.
+- **AI-generated**: character dialogue, diary entries and character cards are all AI-generated and fictional — see the [Disclaimer](DISCLAIMER.en.md) (中文: [DISCLAIMER.md](DISCLAIMER.md)).
 - **License**: MIT License © 2026 Treasure-hub-agent. Open source — see [LICENSE](LICENSE).

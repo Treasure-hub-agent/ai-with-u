@@ -15,9 +15,30 @@
 
 ## 开发约定
 
-- 本仓库是 AI Agent 使用的 skill 包，修改 `SKILL.md` 与 `references/`、`data/`、`schema/` 时请保持格式规范
-- 新增/删除/修改文件后，请重新生成 `MANIFEST.json`（sha256 + bytes 清单）
-- 版本号变更时，请同步 `VERSION` / `package.json` / `SKILL.md` / `README` / `MANIFEST.json`
+- 本仓库是 AI Agent 使用的 skill 包，修改 `SKILL.md` 与 `extended/`、`references/`、`schema/` 时请保持格式规范
+- 新增/删除/修改文件后，请重新生成 `MANIFEST.json`（每文件 sha256 + bytes，含 `total_files` / `total_bytes` 汇总；`MANIFEST.json` 自身不入清单）。生成示例：
+
+  ```bash
+  python3 - <<'EOF'
+  import json, hashlib, os, datetime
+  files = {}
+  for root, dirs, fs in os.walk('.'):
+      dirs[:] = [d for d in dirs if d != '.git']
+      for f in sorted(fs):
+          p = os.path.relpath(os.path.join(root, f), './')
+          if p == 'MANIFEST.json':
+              continue
+          b = open(p, 'rb').read()
+          files[p] = {"sha256": hashlib.sha256(b).hexdigest(), "bytes": len(b)}
+  out = {"version": open('VERSION').read().strip(),
+         "generated": datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+         "root": ".", "files": files, "total_files": len(files),
+         "total_bytes": sum(m["bytes"] for m in files.values())}
+  json.dump(out, open('MANIFEST.json', 'w'), indent=2, ensure_ascii=False)
+  EOF
+  ```
+
+- 版本号变更时，请同步六处版本源：`VERSION` / `package.json` / `SKILL.md`（frontmatter）/ `README.md` + `README.en.md` / `MANIFEST.json` / `CHANGELOG.md`（详细条目写入 `references/changelog.md`）
 - 提交信息使用简洁的约定式前缀（`feat:` / `fix:` / `docs:` / `chore:`）
 
 ## 行为准则

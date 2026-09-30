@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 🔒 安全漏洞报告
+    url: https://github.com/Treasure-hub-agent/ai-with-u/security/advisories/new
+    about: 安全问题请走私有漏洞报告，不要公开创建 Issue。
+  - name: 📖 使用指南
+    url: https://github.com/Treasure-hub-agent/ai-with-u#快速开始
+    about: 安装与使用问题先看 README 快速开始与常见问答。

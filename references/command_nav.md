@@ -6,9 +6,12 @@
 
 | 指令 | 效果 | 确认方式 |
 |---|---|---|
+| 「打开 AIWU」/「陪我聊天」/「加载陪伴包」 | 激活 skill，展示主菜单 | 展示菜单 |
+| 「回主菜单」/「主菜单」 | 回到主菜单（接着聊 / 认识新朋友 / 蒸馏 / 导入 / 角色簿 / 使用指南 入口） | 展示菜单 |
 | 「看看日记」/「日记」 | 默认自然视图展示日记（日期+时间线+心情，去结构标签）；可看原文；可顺带增删改 | 角色口吻 |
 | 「切换纯文本」/「切换动作」 | 交互模式切换（中途随时） | 角色口吻 |
 | 「继续」 | 从上次中断处接续 | 直接接续 |
+| 「继续蒸馏」 | 蒸馏断点续跑（见 `extended/distillation.md` 十二），与对话续聊的「继续」互不影响 | 直接续跑 |
 | 「关系」 | 查看亲密度档位描述（自然语言；查看时重估档位，**仅展示不写回**） | 角色口吻 |
 | 「角色卡」/「弹出角色卡」 | 查看当前角色卡 | 展示卡 |
 | 「改{角色名}的{字段}」 | 定位修改角色设定，下轮自然生效 | 角色口吻 |
@@ -24,7 +27,7 @@
 
 - 以明确系统动词开头才触发（如「看看日记」「切换纯文本」「继续」…），否则一律当对话内容自然回应
 - 「改{字段}」短式仅在创建流程内有效（改当前在建卡）；全局指令用「改{角色名}的{字段}」
-- **英文同义表达同样触发**：see diary / text mode / action mode / continue / relationship / character card / forget … / edit diary … / delete … / fresh start / reset everything / new opening line / help（对照表见 `README.en.md` 命令表）
+- **英文同义表达同样触发**：open AIWU / main menu / see diary / text mode / action mode / continue / continue distilling / relationship / character card / edit {name}'s {field} / forget … / edit diary … / delete … / fresh start / reset everything / new opening line / help（对照表见 `README.en.md` 命令表）
 - **功能界面选项解析**：主菜单 / 单页选择等界面出现 A/B/C 或编号时，用户回字母、数字或直接说意图都识别
 - **参数缺失**：指令缺参数（只发「删除」「忘记」等）→ 用角色口吻追问一句补全，不静默无视、也不当闲聊吞掉
 - 蒸馏流程的断点续跑触发词用「继续蒸馏」（见 `extended/distillation.md` 十二），与对话续聊的「继续」各走各的
