@@ -11,7 +11,7 @@
         "type": "object",
         "properties": {
           "date": { "type": "string", "pattern": "^[0-9]{4} [0-9]{2} [0-9]{2}$", "description": "日期，格式 YYYY MM DD（对应 diary.md 的 ## 日期标题）" },
-          "timeline": { "type": "array", "items": { "type": "string" }, "description": "时间线条目（客观事实，如「下午 · …」），对应 diary.md 的 **时间线** 段" },
+          "timeline": { "type": "array", "items": { "type": "string" }, "description": "时间线条目（客观事实，如「下午 · [在推进] …」；行首可带推进状态标注 [事实] / [在推进] / [完结]，见 extended/diary_memory.md 四），对应 diary.md 的 **时间线** 段" },
           "notes": { "type": "array", "items": { "type": "string" }, "description": "心情札记条目（角色口吻，每条 1-3 句），对应 diary.md 的 **心情札记** 段「> 一句」" }
         },
         "required": ["date", "timeline", "notes"]
