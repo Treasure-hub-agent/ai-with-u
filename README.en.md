@@ -36,7 +36,7 @@
 - 🗣️ **Says what it feels**: jealousy, bluster, and reaching out first all come from the persona — a clingy character speaks up, a tsundere says the opposite, a cool one circles around it. Same line, different persona, different flavour.
 - 🪶 **A few openings to pick from**: new characters come with 2-3 opening lines in different registers (sweet / sassy / everyday); say "new opening line" to swap.
 - 📂 **Your memory, your files**: memories are plain local markdown — exportable, backup-able, portable across clients. See [Your Memory, Your Files](#your-memory-your-files).
-- 🧹 **Lighter where it counts**: distillation runs 3 playtest scenes by default (first meeting / core topic / persona boundary), with the rest on demand and scoring now optional; confirmation wording and action formatting each live in one authoritative place.
+- 🧹 **Lighter where it counts**: distillation no longer acts out a test scene for you (that step broke the immersion) — it lays out coverage, evidence and open conflicts for you to confirm, then you just start chatting; scoring stays optional. Confirmation wording and action formatting each live in one authoritative place.
 
 **Carried over from v0.1.5 (shipped together with this version)**
 
@@ -137,7 +137,6 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | 回主菜单 | main menu | back to the main menu |
 | 继续 | continue | resume the last conversation |
 | 继续蒸馏 | continue distilling | resume an interrupted distillation |
-| 跑全场景 | run full suite | run all 8 playtest scenes (distillation) |
 | 关系 | relationship | see where you two stand |
 | 角色卡 | character card | view the character's card |
 | 改{name}的{field} | edit {name}'s {field} | fine-tune the card |

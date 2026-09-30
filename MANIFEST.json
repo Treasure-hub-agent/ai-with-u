@@ -1,6 +1,6 @@
 {
   "version": "0.1.6",
-  "generated": "2026-09-30T06:43:35Z",
+  "generated": "2026-09-30T13:49:16Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -36,12 +36,12 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "d98263ca0e66e5d9c95e011b6a0dfbf67957b53ea8a63b9ee5a24457694fdce1",
-      "bytes": 14649
+      "sha256": "0467f73150451b28e1a013396f934e3e6690956d886b9c0b98c755e756abb2fe",
+      "bytes": 14639
     },
     "README.md": {
-      "sha256": "e339ff70991c1e6cf67702bdfbbff5b6942f586bb26a28a157b55e1f749f7a9d",
-      "bytes": 13846
+      "sha256": "91137ffba4ca27935c9d7e8d7727055b78e7c7dde4a6116eb61ca3386d93de19",
+      "bytes": 13824
     },
     "SECURITY.md": {
       "sha256": "da23f81989b3a82e849b8f8d52b9ced3722e49f525b1f16e6a63b4aa926abd99",
@@ -60,16 +60,16 @@
       "bytes": 998
     },
     "extended/character_card.md": {
-      "sha256": "282d00a779e89ff98ad0b9edf3b03bc760b0f7ccc44e500b08ca0c57dfe1184d",
-      "bytes": 12727
+      "sha256": "b6b4a75ebb2597d1f7f7060f040172669847ed350e52774ecc0daa31f41e18e5",
+      "bytes": 12685
     },
     "extended/diary_memory.md": {
       "sha256": "e53134a3666cd66598335a8f80d0f95b7fe3cf1eb8066af9bed80495246fd546",
       "bytes": 9075
     },
     "extended/distillation.md": {
-      "sha256": "2cb32ea117bd6076835b02da8cf3de8127453421efbb26fe389f4c215aefe2db",
-      "bytes": 13487
+      "sha256": "ec1a317ec2e06b5477a69aaca9c2f7a1cf874f46468577dfb9cad2b1c00a26a5",
+      "bytes": 13724
     },
     "extended/quick_create.md": {
       "sha256": "cfb17bfe7c6d4ca58bca7672e635147f1e8131ae74f2b252fb3f6348fdbc39fb",
@@ -108,20 +108,20 @@
       "bytes": 345
     },
     "references/changelog.md": {
-      "sha256": "c890e25d43c2268cef684c027318c5efc30ad05c34c94efd580ec8621abc7892",
-      "bytes": 11057
+      "sha256": "3f69b89e5c9f56c85013c64a9cded85adbcb9992c3dc330911f478055a3a338a",
+      "bytes": 11189
     },
     "references/command_nav.md": {
-      "sha256": "5a0ecb5c96b54e82672fc5c2b7ca049c4d792abbe894bd06dad55ebc1c58172f",
-      "bytes": 4737
+      "sha256": "0d8eae78e001967086a6357f912134a89dfe48d5cba46c59a5e1d97b08dac115",
+      "bytes": 4556
     },
     "references/human_chat_guide.md": {
       "sha256": "165229bc4b67e9b1559a6d4deb5003f9e041d83917d1057b16cbaa3c71956503",
       "bytes": 11437
     },
     "references/usage_guide.md": {
-      "sha256": "2a5812f99102c16718550bcac918eca14ced0848b77f24eea690980b7df46419",
-      "bytes": 1313
+      "sha256": "b7a5c8e60d2f295b36ae6ddb653892ec51916b432a7154dee56454f43c03a27b",
+      "bytes": 1244
     },
     "assets/hero.png": {
       "sha256": "05af22abf060768c43a2827b22da231a778f9fd943d6577f718ad4f950e34d71",
@@ -133,5 +133,5 @@
     }
   },
   "total_files": 32,
-  "total_bytes": 680314
+  "total_bytes": 680359
 }
