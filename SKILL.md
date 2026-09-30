@@ -1,7 +1,7 @@
 ---
 name: ai-with-u
 description: "陪伴式角色对话 skill：AI 像真人发消息一样陪伴聊天，零系统痕迹、时间差感知、日记记忆，支持选卡/自创/蒸馏/导入。"
-version: 0.1.5
+version: 0.1.6
 author: Treasure-hub-agent
 license: MIT
 copyright: Copyright (c) 2026 Treasure-hub-agent

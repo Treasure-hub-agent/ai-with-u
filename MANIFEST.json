@@ -1,6 +1,6 @@
 {
-  "version": "0.1.5",
-  "generated": "2026-09-30T06:04:28Z",
+  "version": "0.1.6",
+  "generated": "2026-09-30T06:29:30Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -12,8 +12,8 @@
       "bytes": 389
     },
     "CHANGELOG.md": {
-      "sha256": "b3db43d3ee6591a8dcfe8ea484e88c45e9276db4dc2f885345c3ea639e572c5a",
-      "bytes": 655
+      "sha256": "da43e4b87fe5b5a8642eff9e67519fbe6723a64b969b7c87567f94b6078b4df9",
+      "bytes": 720
     },
     "CODE_OF_CONDUCT.md": {
       "sha256": "25f96ad51b4d24b793a07b04a2711e6ba393011b714fe2fb9a1d744155a3b5fa",
@@ -36,60 +36,60 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "a0dcfd4b26c83ce8d081b14081647422c3db1ffd08a8fed6f8c55de7970ca279",
-      "bytes": 12863
+      "sha256": "367ea6f7f79ab42205407533e661bcfc0a3176a04f9e71cce7ea1adf2cfa1139",
+      "bytes": 14674
     },
     "README.md": {
-      "sha256": "fa50e7fb0fcdd3e28d013d887c3c5232421680089c9e95e5bef264bfefa75dbd",
-      "bytes": 12354
+      "sha256": "3e03f5d051d6dbd159283f8dccdfc75f7bed04bb25947d0637ef78325862d4d8",
+      "bytes": 13651
     },
     "SECURITY.md": {
       "sha256": "da23f81989b3a82e849b8f8d52b9ced3722e49f525b1f16e6a63b4aa926abd99",
       "bytes": 724
     },
     "SKILL.md": {
-      "sha256": "296a626abd1fcbdfb9ec2bfab12e27d46f9fa4826b5b18e3ade15e8d79630e9f",
-      "bytes": 9458
+      "sha256": "895efca15c1cac1557e1a0c7fc4e92c0c90701aaeaafc0bcd41ab77d51234303",
+      "bytes": 9915
     },
     "VERSION": {
-      "sha256": "800cf1c0392b24de7c0a1c6ea6778ecb433dec71c49a150bce96a98477527b2f",
+      "sha256": "1f2110568627307becae713f8b808f3d9d912d4b2a24ed6a78605f03f7437d3c",
       "bytes": 6
     },
     "package.json": {
-      "sha256": "8b57849ad45717c8cce44a9566581f9a8b8fbffb43f8965fca01800d7b6d716f",
+      "sha256": "78c4c2988f7a4df0c28c7935466cc40530d52cf4e0196b686c1a1082508ebbc4",
       "bytes": 998
     },
     "extended/character_card.md": {
-      "sha256": "d8fe2ce4d67770cd096e6001033c00185b78b7b55f0e81153f0d2aa993625138",
-      "bytes": 12091
+      "sha256": "20ae62519635a1fecd4a69354b55e4c2aab7b0d8ef66becc7d2bd2290efb5860",
+      "bytes": 12582
     },
     "extended/diary_memory.md": {
-      "sha256": "2683cdaddeb24e2839f0e65cdd6706e8a9804c3600bdc8d69a21a97c4a3dbdb6",
-      "bytes": 6332
+      "sha256": "810ff2b902bd0dd7e9b54bbbc67c7eb797d240b3f38abb761ac62cd02e2b548f",
+      "bytes": 8409
     },
     "extended/distillation.md": {
-      "sha256": "9c9ac9ab91c35cdff68b2643a9d37cab51e12f7f0457227c38ea8353c579f02c",
-      "bytes": 12700
+      "sha256": "ccf2631c9b24d5d209a21d2cd0843a5dc96f26cf34b2acaf912da3c85a65008a",
+      "bytes": 13288
     },
     "extended/quick_create.md": {
-      "sha256": "9d07b3906eda09b34572b2c5927b6994e68e424bd1e2495cc2df623644a4ce66",
-      "bytes": 6103
+      "sha256": "cfb17bfe7c6d4ca58bca7672e635147f1e8131ae74f2b252fb3f6348fdbc39fb",
+      "bytes": 6155
     },
     "extended/run_config.md": {
-      "sha256": "d7e73f736b53bfd24953fd9a6dac82fd43a6918945ab573a791163b93af10a61",
-      "bytes": 6627
+      "sha256": "212a77cba61478acad7bc85e25ccf99a65df437192d0ccb156fff3ced54a01a8",
+      "bytes": 6718
     },
     "extended/session_continuity.md": {
-      "sha256": "ba8e39bb95ec254e0399aed434b8b9357d668402f40ecef5ee6546283d95594d",
-      "bytes": 6271
+      "sha256": "0c755c330bcedee602a47eb615f2cead9c6c84d5c3fa53a1a2df6ddc5bf242fd",
+      "bytes": 6527
     },
     "schema/character_card.schema.json": {
-      "sha256": "b0eca7e78c3d3fddee571d6101cf6a8b002bafb897a058fcf806d2fd5f37a345",
-      "bytes": 2466
+      "sha256": "469e6540a0b8c6e7675636d16cabfeaae53168df8dafe43b4fbd664eda400413",
+      "bytes": 2739
     },
     "schema/diary.schema.json": {
-      "sha256": "5cf8108ef6bbd504fb701507d031f304b181d6032ae5d4db81c2206e98c98b57",
-      "bytes": 1189
+      "sha256": "4aa7ac2b5978b7ef24d30dcba9432ba44d379e26b5816faed361f52e66669a75",
+      "bytes": 1303
     },
     ".github/PULL_REQUEST_TEMPLATE.md": {
       "sha256": "370278a217b2f37a45c9e3724d57dcda87080781e74acffb31637618f8b6cd97",
@@ -108,16 +108,16 @@
       "bytes": 345
     },
     "references/changelog.md": {
-      "sha256": "bdc552bc6b436846b393445519ac15320dcd7d19d8708b4c9d96ec13e19768d0",
-      "bytes": 9627
+      "sha256": "5cea6ec9a37f6df8aebb5f18405fbeac9d3c0e21255b358c894cca1514611f43",
+      "bytes": 11001
     },
     "references/command_nav.md": {
-      "sha256": "7c183a2b1980df643ca16715dad1aabb5182a02295389ab85dbbf729f7583ccb",
-      "bytes": 4399
+      "sha256": "8bfd31eec51f96be039df04071baf4319ca736a0700533a3268fdc89ea9d0899",
+      "bytes": 4550
     },
     "references/human_chat_guide.md": {
-      "sha256": "cb61336f0a8642cbc82fba3108e989e43cc4ca59c9a1cd9172698051668aa50b",
-      "bytes": 10480
+      "sha256": "01499ec90d3659b555f8f009361ee7db2fdb2df8cfe8b508da84a549926dc81a",
+      "bytes": 11411
     },
     "references/usage_guide.md": {
       "sha256": "e11d6c67b3f86e2831b211be01bb6dea88e576ecc863ce3bb8003fc13ea59767",
@@ -133,5 +133,5 @@
     }
   },
   "total_files": 32,
-  "total_bytes": 668213
+  "total_bytes": 678241
 }

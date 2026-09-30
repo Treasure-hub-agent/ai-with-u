@@ -4,14 +4,14 @@
   <img src="assets/hero.webp" alt="AI WITH U · an old friend living in your phone" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.5** — open source. Your AI chat companion.
+> **AI-WITH-U v0.1.6** — open source. Your AI chat companion.
 > It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
 
 🌐 **[中文](README.md) | English**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.5-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.6-orange.svg)](VERSION)
 
 ---
 
@@ -30,16 +30,23 @@
 
 ---
 
-## What's New (v0.1.5)
+## What's New (v0.1.6)
 
-- 🛡️ **Open-source compliance & consistency**: added bilingual [DISCLAIMER](DISCLAIMER.md) (AI-generated content / data & privacy / no warranty and more, seven sections); copyright notice added to skill metadata and docs. Lite-card definition, reset behavior, and time-gap priorities now share one authoritative rule each.
-- 🔓 **You set the limits**: content scale is entirely yours to decide — no censorship, no gating, no refusal templates. Intimate and NSFW storylines unfold naturally, and how the character reacts follows their persona and your relationship.
+- 💞 **Remembers — and brings it up**: when a promise, birthday, or anniversary comes due, the character raises it on their own ("Did the exam go okay?") using the dates and events already in the diary — no reminders from you. Diary entries carry light progress tags (in-progress / fact / done), so loose ends resurface first, and a resumed session reads the recent thread before digging into older notes.
+- 🗣️ **Says what it feels**: jealousy, bluster, and reaching out first all come from the persona — a clingy character speaks up, a tsundere says the opposite, a cool one circles around it. Same line, different persona, different flavour.
+- 🪶 **A few openings to pick from**: new characters come with 2-3 opening lines in different registers (sweet / sassy / everyday); say "new opening line" to swap.
+- 📂 **Your memory, your files**: memories are plain local markdown — exportable, backup-able, portable across clients. See [Your Memory, Your Files](#your-memory-your-files).
+- 🧹 **Lighter where it counts**: distillation runs 3 playtest scenes by default (first meeting / core topic / persona boundary), with the rest on demand and scoring now optional; confirmation wording and action formatting each live in one authoritative place.
+
+**Carried over from v0.1.5 (shipped together with this version)**
+
+- 🛡️ Bilingual [DISCLAIMER](DISCLAIMER.md) (AI-generated content / data & privacy / no warranty and more, seven sections); copyright notice added to skill metadata and docs. Lite-card definition, reset behavior, and time-gap priorities each have one authoritative rule.
+- 🔓 **You set the limits**: content scale is yours to decide — no censorship, no gating, no refusal templates.
 
 *(Previous highlights below)*
 
 - 🪶 **The character speaks first**: once a character is created (custom / distilled / imported), they open with their own line in a separate message — you never have to figure out how to start. It is kept in the card and reused on a fresh start.
-- 🪶 **Leaner by design**: no new features this round — the rules are trimmed back to one thing: chatting like a real person. No progress bars, no visible numbers, no affection scores; how a relationship grows is up to the character's persona and the things you've told them.
-- 🧹 **Consistent wording**: the open-source statement now reads the same across package metadata and README.
+- 🪶 **Leaner by design**: rules trimmed back to one thing — chatting like a real person. No progress bars, no visible numbers, no affection scores; how a relationship grows is up to the character's persona and the things you've told them.
 - 🧩 **Carried over (v0.1.1–v0.1.3)**: bring a character from a work (name / file / passage / link / online context); actions marked with 「(action)」 brackets; import or delete cards, edit diary entries in place; per-entry mood notes, per-entry "forget", and nothing recorded when unsure.
 
 > v0.1.1 recap: 19 test-driven fixes (targeted cleanup / mixed-intent detection / time-gap tier boundaries). Full history: [`references/changelog.md`](references/changelog.md)
@@ -188,7 +195,7 @@ ai-with-u/
 ├── assets/                       # visual assets
 │   ├── hero.webp                 # README hero (web, about 40 KB)
 │   └── hero.png                  # hero source file
-├── VERSION                       # version number (0.1.5)
+├── VERSION                       # version number (0.1.6)
 ├── LICENSE                       # MIT License
 ├── DISCLAIMER.md                 # Disclaimer (Chinese)
 ├── DISCLAIMER.en.md              # Disclaimer (English)
