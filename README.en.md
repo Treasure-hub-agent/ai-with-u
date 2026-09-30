@@ -157,6 +157,20 @@ Commands default to Chinese; the English aliases below work too — say them nat
 
 ---
 
+## Your Memory, Your Files
+
+The character's memory is just a few markdown / JSON files under `~/.ai-with-u/` — not locked inside a platform, not stored in someone else's cloud:
+
+- 📂 **Local and readable**: cards, diaries, session state — plain text you can open, read, and edit
+- 💾 **Exportable and backup-able**: copy the folder for a complete backup; move to a new machine or client and keep going
+- 🔌 **Portable across agents**: the diary is plain markdown — Hermes, Claude Code, and Cursor read the same files
+- 🔒 **No cloud, no sign-up**: no account, no background sync — the conversation happens on your machine
+- ✂️ **Forget or wipe on your terms**: say "forget {thing}" to drop a memory, or "reset everything" to start over
+
+Your memory belongs to you, not to a server.
+
+---
+
 ## Storage & Permissions
 
 Runtime data lives in `~/.ai-with-u/` (override with env var `AIWU_STORAGE_ROOT`). File read/write is required to persist character cards, diaries, and session history; without write access it **silently degrades** to pure-context mode — chatting never breaks.
