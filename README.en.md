@@ -33,6 +33,7 @@
 ## What's New (v0.1.5)
 
 - 🛡️ **Open-source compliance & consistency**: added bilingual [DISCLAIMER](DISCLAIMER.md) (AI-generated content / data & privacy / no warranty and more, seven sections); copyright notice added to skill metadata and docs. Lite-card definition, reset behavior, and time-gap priorities now share one authoritative rule each.
+- 🔓 **You set the limits**: content scale is entirely yours to decide — no censorship, no gating, no refusal templates. Intimate and NSFW storylines unfold naturally, and how the character reacts follows their persona and your relationship.
 
 *(Previous highlights below)*
 
@@ -227,7 +228,7 @@ A: See `references/changelog.md`; `VERSION` file and SKILL.md frontmatter are au
 
 ## Content & License
 
-- **Audience**: intended for adult users; intimate topics stay restrained per the SFW stance.
-- **Content**: SFW open-source edition. Sensitive topics are answered naturally according to the character's card and current relationship, with a consistent "restrained and subtle, to the point" stance — no explicit scenes.
+- **Audience**: intended for adult users.
+- **Content**: content limits are decided by you — none are built in. Intimate and NSFW storylines unfold naturally; how the character reacts is up to their persona and your relationship. No built-in censorship, gating, or refusal templates.
 - **AI-generated**: character dialogue, diary entries and character cards are all AI-generated and fictional — see the [Disclaimer](DISCLAIMER.en.md) (中文: [DISCLAIMER.md](DISCLAIMER.md)).
 - **License**: MIT License © 2026 Treasure-hub-agent. Open source — see [LICENSE](LICENSE).
