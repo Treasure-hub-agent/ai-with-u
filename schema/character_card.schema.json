@@ -49,7 +49,14 @@
     },
     "opening": {
       "type": "string",
-      "description": "开场白（首次登场第一句）"
+      "description": "开场白（首次登场第一句；默认首句，备选见 openings）"
+    },
+    "openings": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "备选开场白 2-3 句（风格锚点不同：如 甜 / 傲娇 / 日常），「换一句开场」时轮换使用"
     }
   },
   "if": {

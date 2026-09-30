@@ -160,7 +160,7 @@
 - 蒸馏完整卡落库后，**对话时读取「对话场景七字段视图」**（`card.json`）；五维完整卡仅作存档与回溯，不整卡塞进对话上下文。
 - 落库位置：`~/.ai-with-u/characters/<角色名>/`。
 - `_index.json` 条目标注 `source: distill`，与 `custom` / `import` 同库共存。
-- 落库完成后生成开场白写入 `opening` 并首次登场（见 `extended/character_card.md` 2.5）。
+- 落库完成后生成开场白写入 `opening`（并备 2-3 句 `openings`）并首次登场（见 `extended/character_card.md` 2.5）。
 - 对话行为、卡库管理、字段修改与升级规则一律按 `extended/character_card.md` 执行。
 
 ## 十二、断点保存（中断可续）
