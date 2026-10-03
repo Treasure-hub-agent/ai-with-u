@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T15:39:54Z",
+  "generated": "2026-10-03T15:56:48Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -48,8 +48,8 @@
       "bytes": 724
     },
     "SKILL.md": {
-      "sha256": "059e5f63858e8847fe83beea3e0fdbcbd4918a7db70159d5da764a74e71e66ad",
-      "bytes": 12186
+      "sha256": "525a345a294fd6a366fc7ad7461c1bec1bfd4ad435270a78cf91b5395a55afa9",
+      "bytes": 12661
     },
     "VERSION": {
       "sha256": "ba57e7c7f71876d645bcdd9fb070f2dea8e6db5ed284a7e3d85c6b7d2409fef1",
@@ -60,12 +60,12 @@
       "bytes": 1042
     },
     "extended/character_card.md": {
-      "sha256": "eb5916900b78b593e812464c1d7806c83032cd17fc72254f97148de6571ac9af",
-      "bytes": 29130
+      "sha256": "22a270ae15824227d4cdddb8bf8cb9ece236d65efab0d595e1d28b0c579aa2d6",
+      "bytes": 29591
     },
     "extended/diary_memory.md": {
-      "sha256": "2bbf0ab64d0ad7b3c7e83d7cd516fb55a00919d19acbb8e46b4387152ef01193",
-      "bytes": 10336
+      "sha256": "a66e83e501512cb4fe46535f25baf6ee0c03f1bcb732e096c5c7115624a94bf1",
+      "bytes": 10503
     },
     "extended/distillation.md": {
       "sha256": "813e93e285b6145a626710bd733ffb4e09b38d226080205af6ec525f0d7a718e",
@@ -80,8 +80,8 @@
       "bytes": 8547
     },
     "extended/session_continuity.md": {
-      "sha256": "7d3a968234237421c0676ecac07200a7531068d5693c692f1de1aa58ede410a4",
-      "bytes": 9223
+      "sha256": "cc86471d8d306abef26fc105dbe4e3e1a00faa9da9b156c422b158436f73f7b6",
+      "bytes": 9337
     },
     "schema/character_card.schema.json": {
       "sha256": "6a5edd08751e361bd06f68773eb16a2b4443475e69f42c88a088dfe2adc3809c",
@@ -107,25 +107,25 @@
       "sha256": "f33bc9b5953dce197320a676b5911f795d6398f94721e85f4bb9047dc84ec32d",
       "bytes": 345
     },
+    "presets/characters/虞照/card.json": {
+      "sha256": "cbb2a2a856bca1c79d9ab8ce29b2a60fea17376abdc5a1df3b74fea9c0d3a997",
+      "bytes": 4415
+    },
     "presets/characters/裴既明/card.json": {
       "sha256": "cf5290083d0eecf8d8c483941f499e3b4a3eb9d61f5b55f6924800d5bd6a16c4",
       "bytes": 4099
     },
-    "presets/characters/祝闻笛/card.json": {
-      "sha256": "cae7ac0f1d42bf06baaf25d17f0400592ff80a7340bf32941fb2cf8d1231a07a",
-      "bytes": 4060
-    },
     "presets/characters/谢砚舟/card.json": {
-      "sha256": "f4086a1eaf8c36a253b8e155d45748069153b424c1ba8b794c3bfffd2fd2af0f",
-      "bytes": 4061
+      "sha256": "2c433c5b83090bdd2e2553f81b44d087b3c48e0eea2591c2a07ee33cf99a8590",
+      "bytes": 4052
     },
     "references/changelog.md": {
-      "sha256": "5244b7d5fcc0d600eba04f3a033e2dab816a99a29611b01670893c26a4b6630a",
-      "bytes": 18885
+      "sha256": "e7a23fbcb985f484ecec4f0cc739eaa963a237e0d9c6edc614279cd78df50c12",
+      "bytes": 20255
     },
     "references/command_nav.md": {
-      "sha256": "1ac654c82e2329038404ed62d1c29638fdedd26b4a385f8ceed3684a934a1d96",
-      "bytes": 5177
+      "sha256": "8cd896ed17a5d8ee0ce280cdfd433b715b3f888c17c1c05eca72dbd6a54a2681",
+      "bytes": 5391
     },
     "references/human_chat_guide.md": {
       "sha256": "28da96c45da15b1494ae98ed465572620bf8d457bca871fe22187625fe4fc958",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 737574
+  "total_bytes": 740721
 }
