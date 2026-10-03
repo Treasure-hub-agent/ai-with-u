@@ -37,7 +37,7 @@
 - 🎁 **Three characters in the box**: three preset cards take their place on first load. If your roster already has someone in it, they stay out of the way.
 - 🔧 **Foundations tidied**: a single authoritative storage-root definition (changing it no longer splits your data), a clear three-state session start, executable night-window / timezone / due-date rules, and a closed loop for distillation save timing and resuming.
 
-- 📖 **Story backdrop (new)**: every card carries a backdrop — what situation they're in, what's unfolding outside, who's chasing and who's covering. You're not a spectator; you have a place in that story. Derived characters bring the source work's world and the situation it's in along with them.
+- 📖 **Story backdrop (new)**: every card carries a backdrop — who they used to be, how they ended up here, how they get by now, and what ties the two of you together. It's colour, not a quest line: it comes up naturally in conversation, but never hands you a task or pushes a plot forward.
 
 *(Carried over from v0.1.6 and v0.1.5, still in effect:)*
 
