@@ -82,7 +82,7 @@
 1. **完整卡**：五维全量（含证据等级与来源标注），供存档与回溯；
 2. **manifest**（清单）：来源列表、证据覆盖度、conflicts 处置记录、生成时间。
 
-随后将完整卡映射为「对话场景七字段视图」（模板见 `extended/character_card.md` §1.1），写入 `card.json`；映射缺失的字段标 `[待补]`。
+随后将完整卡映射为「对话场景七字段视图」（模板见 `extended/character_card.md` §1.1，**卡面按该文件 §1.5 张力口径校对**：基本信息与动态状态要含「正在发生的利害」，不写成履历式静态描述），写入 `card.json`；映射缺失的字段标 `[待补]`。
 
 **暂存到** `{存储根}/characters/<角色名>/`（存储根默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖，见 `extended/run_config.md` 五）——**Phase 4 只写文件、不生效**：不更新 `_index.json`、不进角色簿、不开始对话；正式落库（对用户生效）以 **Phase 6 用户点头**为准。
 
@@ -167,7 +167,7 @@
 - 蒸馏完整卡落库后，**对话时读取「对话场景七字段视图」**（`card.json`）；五维完整卡仅作存档与回溯，不整卡塞进对话上下文。
 - 落库位置：`{存储根}/characters/<角色名>/`。
 - `_index.json` 条目标注 `source: distill`，与 `custom` / `import` 同库共存。
-- 落库完成后生成开场白写入 `opening`（并备 2-3 句 `openings`）并首次登场（见 `extended/character_card.md` 2.5）。
+- 落库完成后生成开场白写入 `opening`（并备 2-3 句 `openings`）并首次登场（见 `extended/character_card.md` 2.5）。**开场白一律按 `extended/character_card.md` §1.5 的张力口径写**——蒸馏的设定取自原作（现成），**张力主要落在开场白**：第一条即钩子（角色正在做一件有后果的事并主动开口）、台词带目的、把下一步摊给用户；**禁止「静态场景 + 一句问候」**。
 - 对话行为、卡库管理、字段修改与升级规则一律按 `extended/character_card.md` 执行。
 
 ## 十二、断点保存（中断可续）
