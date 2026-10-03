@@ -137,7 +137,7 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | 回主菜单 | main menu | back to the main menu |
 | 继续 | continue | resume the last conversation |
 | 继续蒸馏 | continue distilling | resume an interrupted distillation |
-| 关系 | relationship | see where you two stand |
+| 关系 | relationship | hear how close you two have become (not a number) |
 | 角色卡 | character card | view the character's card |
 | 改{name}的{field} | edit {name}'s {field} | fine-tune the card |
 | 忘记{thing} | forget {thing} | make it forget something |
@@ -160,6 +160,7 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | 📔 Effortless diary memory | Details worth remembering are logged silently and referenced naturally; retrieve with "看看日记"; zero trace in the main text |
 | 🔄 Session continuity | New sessions pick up relationship and memory; "fresh start" anytime |
 | 🎭 Four character sources | Roster / create / derive / import — all unified into one store |
+| 🪞 Your role (optional) | Let the character see you as someone in their story — e.g. another character from the same work — or describe it yourself; leave it empty and you're simply yourself |
 | 💫 Interaction modes | Pure-text / text+action switch anytime; confirmations use the character's voice, then return to conversation |
 | 🛡️ Graceful degradation | If file I/O fails, silently falls back to pure-context mode — chat never breaks |
 

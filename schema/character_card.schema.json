@@ -23,6 +23,10 @@
       "type": "object",
       "description": "▎关系定位：关系起点 / 角色怎么称呼用户 / 用户怎么称呼角色"
     },
+    "user_persona": {
+      "type": "object",
+      "description": "▎你的身份（选填，附字段）：用户在该角色故事里的身份——你是谁 / 与 TA 的关系 / 共同经历（可选）；为空表示用户就是本人，按 relationship 的关系起点走"
+    },
     "memory_anchor": {
       "type": "object",
       "description": "▎记忆锚点：角色背景故事要点（对话可自然引用）"
