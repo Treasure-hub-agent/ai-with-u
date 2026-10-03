@@ -1,11 +1,11 @@
 # AI-WITH-U
 
 <p align="center">
-  <img src="assets/hero.webp" alt="AI WITH U · an old friend living in your phone" width="100%">
+  <img src="assets/hero.webp" alt="AI WITH U · give your AI character roleplay and long-term memory" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.7** — open source. Your AI chat companion.
-> It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
+> **AI-WITH-U v0.1.7** — open source. Give your AI character roleplay and long-term memory.
+> Conversation that reads like messages from an old friend: no tasks, no progress bars, just chatting.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
 
 🌐 **[中文](README.md) | English**
@@ -17,7 +17,7 @@
 
 ## ✨ What It Does
 
-**AI-WITH-U** is a companion-chat skill for AI agents — once installed, the AI texts you like a real person. No status bars, no option lists, no robotic assistant voice. Just natural conversation.
+**AI-WITH-U** is a roleplay skill for AI clients — once installed, the AI texts you like a real person. No status bars, no option lists, no robotic assistant voice. Just natural conversation.
 
 **What you get:**
 
@@ -36,6 +36,8 @@
 - 🕊️ **Lighter relationship**: closeness is now a handful of stages the model reads fresh each time — not a number, never stored on disk. It appears only in the roster, character selection and the "relationship" command; never inside the conversation.
 - 🎁 **Three characters in the box**: three preset cards take their place on first load. If your roster already has someone in it, they stay out of the way.
 - 🔧 **Foundations tidied**: a single authoritative storage-root definition (changing it no longer splits your data), a clear three-state session start, executable night-window / timezone / due-date rules, and a closed loop for distillation save timing and resuming.
+
+- 📖 **Story backdrop (new)**: every card carries a backdrop — what situation they're in, what's unfolding outside, who's chasing and who's covering. You're not a spectator; you have a place in that story. Derived characters bring the source work's world and the situation it's in along with them.
 
 *(Carried over from v0.1.6 and v0.1.5, still in effect:)*
 

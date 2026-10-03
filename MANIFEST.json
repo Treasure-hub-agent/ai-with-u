@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T14:46:50Z",
+  "generated": "2026-10-03T14:52:57Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -36,12 +36,12 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "93086172b61392381685726ca64cf1b477347723fbe957f6f0f043f12ec7585b",
-      "bytes": 16186
+      "sha256": "8038a3c8c96e55b2fbdaf2899fd4bb7f0add7e5f36b30c5820c678d5e548fb2e",
+      "bytes": 16536
     },
     "README.md": {
-      "sha256": "8462715f5acf3a4e15e3379457dfb376dcf95edbf2efb8df2c803bf2ee56d0d9",
-      "bytes": 15190
+      "sha256": "48b17cf20e84b0e7e772cb31b5579b4d87fe9ce69957bf8471dfcd4988eb784a",
+      "bytes": 15542
     },
     "SECURITY.md": {
       "sha256": "da23f81989b3a82e849b8f8d52b9ced3722e49f525b1f16e6a63b4aa926abd99",
@@ -56,24 +56,24 @@
       "bytes": 6
     },
     "package.json": {
-      "sha256": "bf0810eb15ea71e9eec9076f34f9d986b972026ff69063db7ec67f42818f74db",
-      "bytes": 1013
+      "sha256": "e499260c77c64dd84f78cf0e40c516c8c008ac23836ff895f6f21ed169901576",
+      "bytes": 1042
     },
     "extended/character_card.md": {
-      "sha256": "63b191060766d115f26b1553f3c215a72e23550a158cb37d21cdd9947aef6f61",
-      "bytes": 21941
+      "sha256": "488e0f0462c0c62d1614499ffc65e577a2b4a864ea2dbb1ef4a3be6fbabc3a25",
+      "bytes": 24039
     },
     "extended/diary_memory.md": {
       "sha256": "2bbf0ab64d0ad7b3c7e83d7cd516fb55a00919d19acbb8e46b4387152ef01193",
       "bytes": 10336
     },
     "extended/distillation.md": {
-      "sha256": "8b2728ce877c68fcc6a5358cdd20b723844549c887773150aabff49aa08c4b82",
-      "bytes": 16280
+      "sha256": "ae87c90b68f5c562576c1612f9ae81b0cd9f08232f7fc8f75640c6c7fb996b00",
+      "bytes": 16707
     },
     "extended/quick_create.md": {
-      "sha256": "81f59c21070950165e81372a1fea10d9e5835136f5a855ecbabfc911a55f3946",
-      "bytes": 7493
+      "sha256": "eff14063f456ea44bb3e80106a1382758d1dee75c37362acabab9f417ae925d7",
+      "bytes": 7672
     },
     "extended/run_config.md": {
       "sha256": "7e8294b9edfd7a26857b39f2b9de4f59ac0a13a77e3edbc47533382bcb47d638",
@@ -84,8 +84,8 @@
       "bytes": 8620
     },
     "schema/character_card.schema.json": {
-      "sha256": "f3dd0706a7d2c084a7c829697ad51eeedc281185f824531d8590cd8fa6f30013",
-      "bytes": 3089
+      "sha256": "6a5edd08751e361bd06f68773eb16a2b4443475e69f42c88a088dfe2adc3809c",
+      "bytes": 3358
     },
     "schema/diary.schema.json": {
       "sha256": "4aa7ac2b5978b7ef24d30dcba9432ba44d379e26b5816faed361f52e66669a75",
@@ -108,20 +108,20 @@
       "bytes": 345
     },
     "presets/characters/岑栖/card.json": {
-      "sha256": "4a78ec375f9e52d5e6596509456d06c16877b0e0d69c67346c1d61a53aba117f",
-      "bytes": 2852
+      "sha256": "c19cf812e81afb64df995036ecc54a097e60e81339888cc6002272b9ba2400fe",
+      "bytes": 3355
     },
     "presets/characters/俞听澜/card.json": {
-      "sha256": "89b28e6159f1c0bb9315d0764a4a0078732deeb3f21e1d8ae489573878678090",
-      "bytes": 2877
+      "sha256": "345f8915c0b9159b1464bf421ae2ee1da350060e987f5b460456058e1eac22a6",
+      "bytes": 3392
     },
     "presets/characters/穆停云/card.json": {
-      "sha256": "95b083e8cf6f7af74e826e0d054e5775b72f3ec910388ea652156803f59f1a82",
-      "bytes": 2910
+      "sha256": "8e45a1940fb07b575e1eec57b96819d487ac2c85a6f6aa892e7edefb2e26400a",
+      "bytes": 3407
     },
     "references/changelog.md": {
-      "sha256": "a25340bd1eb6931d3590cc807b37a369be98ba892a7799257c99a46509c024e6",
-      "bytes": 15201
+      "sha256": "b746cca06c563a87cb6e860622567b537b4a4598c85d0d3420a7132beec70747",
+      "bytes": 16192
     },
     "references/command_nav.md": {
       "sha256": "17e187de4f1db4e54e6b44638e2834b1f678bb018409e22a8d379db932b026fa",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 717863
+  "total_bytes": 724073
 }
