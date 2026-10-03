@@ -4,14 +4,14 @@
   <img src="assets/hero.webp" alt="AI WITH U · an old friend living in your phone" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.6** — open source. Your AI chat companion.
+> **AI-WITH-U v0.1.7** — open source. Your AI chat companion.
 > It feels like an old friend living in your phone: no tasks, no progress bars, just conversation.
 > It remembers your conversations — and knows you just woke up when you message it the next morning.
 
 🌐 **[中文](README.md) | English**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.6-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.7-orange.svg)](VERSION)
 
 ---
 
@@ -30,7 +30,14 @@
 
 ---
 
-## What's New (v0.1.6)
+## What's New (v0.1.7)
+
+- 🪞 **Your role (new)**: you can be someone inside the character's story — during distillation, pick another character from the same work to play, or describe one yourself. Leave it empty and you're simply yourself. All four ways of getting a character support it, and you can change it anytime with "edit {name}'s your role".
+- 🕊️ **Lighter relationship**: closeness is now a handful of stages the model reads fresh each time — not a number, never stored on disk. It appears only in the roster, character selection and the "relationship" command; never inside the conversation.
+- 🎁 **Three characters in the box**: three preset cards take their place on first load. If your roster already has someone in it, they stay out of the way.
+- 🔧 **Foundations tidied**: a single authoritative storage-root definition (changing it no longer splits your data), a clear three-state session start, executable night-window / timezone / due-date rules, and a closed loop for distillation save timing and resuming.
+
+*(Carried over from v0.1.6 and v0.1.5, still in effect:)*
 
 - 💞 **Remembers — and brings it up**: when a promise, birthday, or anniversary comes due, the character raises it on their own ("Did the exam go okay?") using the dates and events already in the diary — no reminders from you. Diary entries carry light progress tags (in-progress / fact / done), so loose ends resurface first, and a resumed session reads the recent thread before digging into older notes.
 - 🗣️ **Says what it feels**: jealousy, bluster, and reaching out first all come from the persona — a clingy character speaks up, a tsundere says the opposite, a cool one circles around it. Same line, different persona, different flavour.
@@ -197,7 +204,7 @@ ai-with-u/
 ├── assets/                       # visual assets
 │   ├── hero.webp                 # README hero (web, about 40 KB)
 │   └── hero.png                  # hero source file
-├── VERSION                       # version number (0.1.6)
+├── VERSION                       # version number (0.1.7)
 ├── LICENSE                       # MIT License
 ├── DISCLAIMER.md                 # Disclaimer (Chinese)
 ├── DISCLAIMER.en.md              # Disclaimer (English)
@@ -207,6 +214,7 @@ ai-with-u/
 ├── CONTRIBUTING.md / SECURITY.md / CODE_OF_CONDUCT.md  # contribution / security / conduct
 ├── .github/                      # issue / PR templates
 ├── .gitattributes                # LF normalization (text eol=lf)
+├── presets/                      # preset character cards (seeded on first load; rename or delete freely)
 ├── extended/                     # on-demand modules
 │   ├── character_card.md         # card format + roster management + import
 │   ├── quick_create.md           # create: quick tier + full-custom tier

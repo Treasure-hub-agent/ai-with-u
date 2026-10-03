@@ -4,14 +4,14 @@
   <img src="assets/hero.webp" alt="AI WITH U · 手机里像住进一个老朋友" width="100%">
 </p>
 
-> **AI-WITH-U v0.1.6** —— 开源，你的 AI 聊天搭子。
+> **AI-WITH-U v0.1.7** —— 开源，你的 AI 聊天搭子。
 > 手机里像住进一个老朋友：没有任务，没有进度条，只有聊天。
 > TA 会记得你说过的话，隔了一晚也知道你是刚睡醒。
 
 🌐 **中文 | [English](README.en.md)**
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-0.1.6-orange.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-0.1.7-orange.svg)](VERSION)
 
 ---
 
@@ -30,9 +30,24 @@
 
 ---
 
-## 📌 当前版本动态（v0.1.6 · 情感确定性）
+## 📌 当前版本动态（v0.1.7 · 你的身份与轻量关系）
 
 > 本栏目介绍最新版本的变化；历史版本见 `references/changelog.md`。
+
+**🪞 你的身份（新的）**
+- 你可以是 TA 故事里的某个人：蒸馏时挑一位同作品里关系亲近的角色来演，或自己描述一句；**留空就是「你本人」**，不设也照常聊
+- 四种建卡路径都接得住（蒸馏 / 自创 / 定制 / 导入），随时可用「改{名字}的你的身份」调整
+
+**🕊️ 关系轻量化**
+- 亲密度收敛成「模型现读现算」的几个阶段：**非数值、不存盘**；只在选角色、角色簿和「关系」指令里以标签出现，**聊天里不出现**
+
+**🎁 开箱即有三位**
+- 自带 3 张预置角色卡，第一次加载自动就位；角色簿里已经有人的话，绝不打扰
+
+**🔧 顺手把地基修平**
+- 存储根口径统一（自定义存储目录后不再分裂数据）、开局判定三态、同夜/时区/到期日判定可执行化、蒸馏落库时机与断点续跑闭环
+
+> 🕘 以下是 v0.1.6 / v0.1.5 带来的能力（继续有效）：
 
 **💞 记得住，也提得起**
 - 约定、生日与纪念日到期时，TA 会像真人一样自然提起（「考完了吗，应该不难吧」）——靠日记里的日子和事，不用你提醒
@@ -197,7 +212,7 @@ ai-with-u/
 ├── assets/                       # 视觉资产
 │   ├── hero.webp                 # README 头图（网页用，约 40 KB）
 │   └── hero.png                  # 头图源文件
-├── VERSION                       # 版本号（0.1.6）
+├── VERSION                       # 版本号（0.1.7）
 ├── LICENSE                       # MIT License
 ├── DISCLAIMER.md                 # 免责声明（中文）
 ├── DISCLAIMER.en.md              # 免责声明（English）
@@ -207,6 +222,7 @@ ai-with-u/
 ├── CONTRIBUTING.md / SECURITY.md / CODE_OF_CONDUCT.md  # 贡献 / 安全 / 行为准则
 ├── .github/                      # Issue / PR 模板
 ├── .gitattributes                # LF 统一（text eol=lf）
+├── presets/                      # 随包预置角色卡（首次加载幂等落位，可改名可删）
 ├── extended/                     # 按需加载模块
 │   ├── character_card.md         # 角色卡格式 + 卡库管理 + 导入
 │   ├── quick_create.md           # 自创：快速档 + 全面定制档

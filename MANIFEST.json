@@ -1,6 +1,6 @@
 {
-  "version": "0.1.6",
-  "generated": "2026-09-30T13:49:16Z",
+  "version": "0.1.7",
+  "generated": "2026-10-03T13:41:55Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -12,8 +12,8 @@
       "bytes": 389
     },
     "CHANGELOG.md": {
-      "sha256": "da43e4b87fe5b5a8642eff9e67519fbe6723a64b969b7c87567f94b6078b4df9",
-      "bytes": 720
+      "sha256": "4029217c2ac231d0d89c204fd33b97922f589a29ddc4e5d64db3a23f67f2a0cc",
+      "bytes": 896
     },
     "CODE_OF_CONDUCT.md": {
       "sha256": "25f96ad51b4d24b793a07b04a2711e6ba393011b714fe2fb9a1d744155a3b5fa",
@@ -36,56 +36,56 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "0467f73150451b28e1a013396f934e3e6690956d886b9c0b98c755e756abb2fe",
-      "bytes": 14639
+      "sha256": "93086172b61392381685726ca64cf1b477347723fbe957f6f0f043f12ec7585b",
+      "bytes": 16186
     },
     "README.md": {
-      "sha256": "91137ffba4ca27935c9d7e8d7727055b78e7c7dde4a6116eb61ca3386d93de19",
-      "bytes": 13824
+      "sha256": "8462715f5acf3a4e15e3379457dfb376dcf95edbf2efb8df2c803bf2ee56d0d9",
+      "bytes": 15190
     },
     "SECURITY.md": {
       "sha256": "da23f81989b3a82e849b8f8d52b9ced3722e49f525b1f16e6a63b4aa926abd99",
       "bytes": 724
     },
     "SKILL.md": {
-      "sha256": "a2cc04bf8da5ea23a48a2f3e8215e99785155293d2cf5006012a73e896303db8",
-      "bytes": 9939
+      "sha256": "50ff73c8c23278ba9ff0bc8c0cc83a569eeba67402bd0e1e12e81760540e9bdf",
+      "bytes": 11687
     },
     "VERSION": {
-      "sha256": "1f2110568627307becae713f8b808f3d9d912d4b2a24ed6a78605f03f7437d3c",
+      "sha256": "ba57e7c7f71876d645bcdd9fb070f2dea8e6db5ed284a7e3d85c6b7d2409fef1",
       "bytes": 6
     },
     "package.json": {
-      "sha256": "78c4c2988f7a4df0c28c7935466cc40530d52cf4e0196b686c1a1082508ebbc4",
-      "bytes": 998
+      "sha256": "bf0810eb15ea71e9eec9076f34f9d986b972026ff69063db7ec67f42818f74db",
+      "bytes": 1013
     },
     "extended/character_card.md": {
-      "sha256": "b6b4a75ebb2597d1f7f7060f040172669847ed350e52774ecc0daa31f41e18e5",
-      "bytes": 12685
+      "sha256": "4e75f64343313062ffe778f8117dc9f96f2aa91440e8a63bba66e971ca0013eb",
+      "bytes": 18551
     },
     "extended/diary_memory.md": {
-      "sha256": "e53134a3666cd66598335a8f80d0f95b7fe3cf1eb8066af9bed80495246fd546",
-      "bytes": 9075
+      "sha256": "2bbf0ab64d0ad7b3c7e83d7cd516fb55a00919d19acbb8e46b4387152ef01193",
+      "bytes": 10336
     },
     "extended/distillation.md": {
-      "sha256": "ec1a317ec2e06b5477a69aaca9c2f7a1cf874f46468577dfb9cad2b1c00a26a5",
-      "bytes": 13724
+      "sha256": "a4699f7354a732b911741745c696265a99b512a98a106a30d37d30538d77b176",
+      "bytes": 15807
     },
     "extended/quick_create.md": {
-      "sha256": "cfb17bfe7c6d4ca58bca7672e635147f1e8131ae74f2b252fb3f6348fdbc39fb",
-      "bytes": 6155
+      "sha256": "4810f960f676cf52bd88487f59c231aad5dc9f410b26ab7075e4b8bb923bbed4",
+      "bytes": 6840
     },
     "extended/run_config.md": {
-      "sha256": "079165ed7ffd250578820f0432e559f55293a3f2b59bc6fc1776ac988d71ed7a",
-      "bytes": 6715
+      "sha256": "7e8294b9edfd7a26857b39f2b9de4f59ac0a13a77e3edbc47533382bcb47d638",
+      "bytes": 8435
     },
     "extended/session_continuity.md": {
-      "sha256": "7dffec7374c3e26d61e89f108a6a9403aadcbbae533431ca367fcc056c6d450a",
-      "bytes": 6613
+      "sha256": "0300347a7423b3b7954c467e7de8a3aea439f341433989eefe6f31f0aab90d26",
+      "bytes": 8620
     },
     "schema/character_card.schema.json": {
-      "sha256": "f29bf6fecdd69aaf2d4ff3746e492c1f824d99b9e8d6f27599ee5127d156f616",
-      "bytes": 2802
+      "sha256": "f3dd0706a7d2c084a7c829697ad51eeedc281185f824531d8590cd8fa6f30013",
+      "bytes": 3089
     },
     "schema/diary.schema.json": {
       "sha256": "4aa7ac2b5978b7ef24d30dcba9432ba44d379e26b5816faed361f52e66669a75",
@@ -107,21 +107,33 @@
       "sha256": "f33bc9b5953dce197320a676b5911f795d6398f94721e85f4bb9047dc84ec32d",
       "bytes": 345
     },
+    "presets/characters/林小满/card.json": {
+      "sha256": "ca2e86ee8b04a98a80cde8559276062fd33869e6fd934b9e2bb8246031b38567",
+      "bytes": 2554
+    },
+    "presets/characters/程野/card.json": {
+      "sha256": "ed0b5c27afc9161729d658cd78c4d42233394447521b2668ee643726faa3769b",
+      "bytes": 2506
+    },
+    "presets/characters/温予/card.json": {
+      "sha256": "730ef5f2d9b4ac523bb8eef03667b08f49e27ae0a03ae35ded29abfa300812dd",
+      "bytes": 2486
+    },
     "references/changelog.md": {
-      "sha256": "3f69b89e5c9f56c85013c64a9cded85adbcb9992c3dc330911f478055a3a338a",
-      "bytes": 11189
+      "sha256": "eca4d7c472fa5b6d52509b24ecfd47c776f33df1b5e6a7094ed9dd1611cb164e",
+      "bytes": 14311
     },
     "references/command_nav.md": {
-      "sha256": "0d8eae78e001967086a6357f912134a89dfe48d5cba46c59a5e1d97b08dac115",
-      "bytes": 4556
+      "sha256": "17e187de4f1db4e54e6b44638e2834b1f678bb018409e22a8d379db932b026fa",
+      "bytes": 4956
     },
     "references/human_chat_guide.md": {
       "sha256": "165229bc4b67e9b1559a6d4deb5003f9e041d83917d1057b16cbaa3c71956503",
       "bytes": 11437
     },
     "references/usage_guide.md": {
-      "sha256": "b7a5c8e60d2f295b36ae6ddb653892ec51916b432a7154dee56454f43c03a27b",
-      "bytes": 1244
+      "sha256": "f00dac7a7e859187c69a8e32f346024be9dc366e4fdcf702b3b7697d65c9e9ab",
+      "bytes": 1405
     },
     "assets/hero.png": {
       "sha256": "05af22abf060768c43a2827b22da231a778f9fd943d6577f718ad4f950e34d71",
@@ -132,6 +144,6 @@
       "bytes": 40758
     }
   },
-  "total_files": 32,
-  "total_bytes": 680359
+  "total_files": 35,
+  "total_bytes": 710349
 }
