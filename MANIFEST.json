@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T15:32:53Z",
+  "generated": "2026-10-03T15:39:54Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -48,8 +48,8 @@
       "bytes": 724
     },
     "SKILL.md": {
-      "sha256": "28ca2e39c77be87c686bddbce40d4437a7e2852ccdbe25505a2fe4d5d252ce50",
-      "bytes": 11896
+      "sha256": "059e5f63858e8847fe83beea3e0fdbcbd4918a7db70159d5da764a74e71e66ad",
+      "bytes": 12186
     },
     "VERSION": {
       "sha256": "ba57e7c7f71876d645bcdd9fb070f2dea8e6db5ed284a7e3d85c6b7d2409fef1",
@@ -120,16 +120,16 @@
       "bytes": 4061
     },
     "references/changelog.md": {
-      "sha256": "13e56fdc0764c4b13d653b3fdfb268966d9b6174de86e12bddecd23741c2906a",
-      "bytes": 18260
+      "sha256": "5244b7d5fcc0d600eba04f3a033e2dab816a99a29611b01670893c26a4b6630a",
+      "bytes": 18885
     },
     "references/command_nav.md": {
       "sha256": "1ac654c82e2329038404ed62d1c29638fdedd26b4a385f8ceed3684a934a1d96",
       "bytes": 5177
     },
     "references/human_chat_guide.md": {
-      "sha256": "13e336064f4e8303b5565ca0f1ee8682da0a5368e07374bb52b6b338189b96a5",
-      "bytes": 12243
+      "sha256": "28da96c45da15b1494ae98ed465572620bf8d457bca871fe22187625fe4fc958",
+      "bytes": 13011
     },
     "references/usage_guide.md": {
       "sha256": "93f31f75b4f4ac48c95cc8b0c5fb0c685d1742219620b9d29ba64fa195e4ff05",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 735891
+  "total_bytes": 737574
 }
