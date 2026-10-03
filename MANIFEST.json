@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T14:18:17Z",
+  "generated": "2026-10-03T14:41:31Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -107,17 +107,17 @@
       "sha256": "f33bc9b5953dce197320a676b5911f795d6398f94721e85f4bb9047dc84ec32d",
       "bytes": 345
     },
-    "presets/characters/林小满/card.json": {
-      "sha256": "ca2e86ee8b04a98a80cde8559276062fd33869e6fd934b9e2bb8246031b38567",
-      "bytes": 2554
+    "presets/characters/岑栖/card.json": {
+      "sha256": "7a151d416da98ac81b87e28325005c0e752d9ee041e72730d1f0f687b427595e",
+      "bytes": 2879
     },
-    "presets/characters/程野/card.json": {
-      "sha256": "ed0b5c27afc9161729d658cd78c4d42233394447521b2668ee643726faa3769b",
-      "bytes": 2506
+    "presets/characters/俞听澜/card.json": {
+      "sha256": "23d08b415fb4eff2c94a541f067876f9da12de78652b43c3521d5ee0a0320e20",
+      "bytes": 2859
     },
-    "presets/characters/温予/card.json": {
-      "sha256": "730ef5f2d9b4ac523bb8eef03667b08f49e27ae0a03ae35ded29abfa300812dd",
-      "bytes": 2486
+    "presets/characters/穆停云/card.json": {
+      "sha256": "bec4b823427c5b3565bb30554249a6cd7d205f3f47c944bdfb8c3b06c8d7832a",
+      "bytes": 2831
     },
     "references/changelog.md": {
       "sha256": "a25340bd1eb6931d3590cc807b37a369be98ba892a7799257c99a46509c024e6",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 716770
+  "total_bytes": 717793
 }
