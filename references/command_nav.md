@@ -8,6 +8,7 @@
 |---|---|---|
 | 「打开 AIWU」/「陪我聊天」/「加载陪伴包」 | 激活 skill，展示主菜单 | 展示菜单 |
 | 「回主菜单」/「主菜单」 | 回到主菜单（接着聊 / 认识新朋友 / 蒸馏 / 导入 / 角色簿 / 使用指南 入口） | 展示菜单 |
+| 「返回角色选择」/「退回选角」 | 从当前角色退回选角列表（首次登场引导里提示的指令；不受「有历史档案」限制，随时可用） | 展示列表 |
 | 「看看日记」/「日记」 | 默认自然视图展示日记（日期+时间线+心情，去结构标签）；可看原文；可顺带增删改 | 角色口吻 |
 | 「切换纯文本」/「切换动作」 | 交互模式切换（中途随时） | 角色口吻 |
 | 「继续」 | 从上次中断处接续 | 直接接续 |
@@ -27,7 +28,7 @@
 
 - 以明确系统动词开头才触发（如「看看日记」「切换纯文本」「继续」…），否则一律当对话内容自然回应
 - 「改{字段}」短式仅在创建流程内有效（改当前在建卡）；全局指令用「改{角色名}的{字段}」
-- **英文同义表达同样触发**：open AIWU / chat with me / main menu / see diary / text mode / action mode / continue / continue distilling / relationship / character card / edit {name}'s {field} / forget … / edit diary … / delete … / fresh start / reset everything / new opening line / help（**与 `README.en.md` 的 Commands 表逐行一致**，增删指令时两处同步）
+- **英文同义表达同样触发**：open AIWU / chat with me / main menu / see diary / text mode / action mode / continue / continue distilling / return to character select / relationship / character card / edit {name}'s {field} / forget … / edit diary … / delete … / fresh start / reset everything / new opening line / help（**与 `README.en.md` 的 Commands 表逐行一致**，增删指令时两处同步）
 - **功能界面选项解析**：主菜单 / 单页选择等界面出现 A/B/C 或编号时，用户回字母、数字或直接说意图都识别
 - **参数缺失**：指令缺参数（只发「删除」「忘记」等）→ 用角色口吻追问一句补全，不静默无视、也不当闲聊吞掉
 - 蒸馏流程的断点续跑触发词用「继续蒸馏」（见 `extended/distillation.md` 十二），与对话续聊的「继续」各走各的

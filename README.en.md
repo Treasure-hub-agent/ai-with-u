@@ -144,6 +144,7 @@ Commands default to Chinese; the English aliases below work too — say them nat
 | 切换纯文本 / 切换动作 | text mode / action mode | switch chat style |
 | 打开 AIWU / 陪我聊天 / 加载陪伴包 | open AIWU / chat with me | activate the skill and show the main menu |
 | 回主菜单 | main menu | back to the main menu |
+| 返回角色选择 | return to character select | back to the character selection screen |
 | 继续 | continue | resume the last conversation |
 | 继续蒸馏 | continue distilling | resume an interrupted distillation |
 | 关系 | relationship | hear how close you two have become (not a number) |
