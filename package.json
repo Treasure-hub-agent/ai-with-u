@@ -25,7 +25,8 @@
     "extended",
     "references",
     "schema",
-    "assets/hero.webp"
+    "assets/hero.webp",
+    "presets"
   ],
   "publishConfig": {
     "access": "public"

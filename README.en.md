@@ -121,7 +121,7 @@ Restart your client after copying, then send "打开 AIWU".
 4. Chat like you'd text an old friend — it replies in the character's voice
 5. Send "看看日记" anytime to see what it quietly noted; "使用指南" for the full command list
 
-> Out of the box, no configuration needed; if file write access is missing it silently degrades to pure-context mode — conversation never breaks.
+> Out of the box, no configuration needed — three preset character cards ship inside the skill and take their place on first load, so you can start chatting right away. If file write access is missing it silently degrades to pure-context mode — conversation never breaks.
 
 ---
 
