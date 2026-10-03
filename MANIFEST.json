@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T14:41:31Z",
+  "generated": "2026-10-03T14:46:50Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -108,16 +108,16 @@
       "bytes": 345
     },
     "presets/characters/岑栖/card.json": {
-      "sha256": "7a151d416da98ac81b87e28325005c0e752d9ee041e72730d1f0f687b427595e",
-      "bytes": 2879
+      "sha256": "4a78ec375f9e52d5e6596509456d06c16877b0e0d69c67346c1d61a53aba117f",
+      "bytes": 2852
     },
     "presets/characters/俞听澜/card.json": {
-      "sha256": "23d08b415fb4eff2c94a541f067876f9da12de78652b43c3521d5ee0a0320e20",
-      "bytes": 2859
+      "sha256": "89b28e6159f1c0bb9315d0764a4a0078732deeb3f21e1d8ae489573878678090",
+      "bytes": 2877
     },
     "presets/characters/穆停云/card.json": {
-      "sha256": "bec4b823427c5b3565bb30554249a6cd7d205f3f47c944bdfb8c3b06c8d7832a",
-      "bytes": 2831
+      "sha256": "95b083e8cf6f7af74e826e0d054e5775b72f3ec910388ea652156803f59f1a82",
+      "bytes": 2910
     },
     "references/changelog.md": {
       "sha256": "a25340bd1eb6931d3590cc807b37a369be98ba892a7799257c99a46509c024e6",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 717793
+  "total_bytes": 717863
 }
