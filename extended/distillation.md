@@ -84,23 +84,23 @@
 
 随后将完整卡映射为「对话场景七字段视图」（模板见 `extended/character_card.md` §1.1），写入 `card.json` 作为对话统一入口；映射缺失的字段标 `[待补]`。
 
-落库到 `~/.ai-with-u/characters/<角色名>/`：
+落库到 `{存储根}/characters/<角色名>/`（存储根默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖，见 `extended/run_config.md` 五）：
 
 ```
-~/.ai-with-u/characters/<角色名>/
+{存储根}/characters/<角色名>/
 ├── card.json          # 对话场景七字段视图（对话时读取）
 ├── full_card.md       # 五维完整卡（含证据等级与来源）
 ├── manifest.json      # 来源 / 证据覆盖度 / conflicts / 质量分
 └── _checkpoint.json   # 断点（见「断点保存」）
 ```
 
-同步更新 `~/.ai-with-u/_index.json`，标注 `source: distill`。
+同步更新 `{存储根}/_index.json`，标注 `source: distill`。
 
 ## 六、Phase 5 · 告知用户（文件路径 / 证据覆盖度 / 设定冲突）
 
 落库后向用户汇报三项：
 
-1. **文件路径**：角色卡存放位置（`~/.ai-with-u/characters/<角色名>/` 及其中各文件）。
+1. **文件路径**：角色卡存放位置（`{存储根}/characters/<角色名>/` 及其中各文件）。
 2. **证据覆盖度**：五维各自的证据覆盖情况（充足 / 部分 / 缺失 `[待补]`）。
 3. **设定冲突**：存在哪些跨来源冲突、如何处置、哪些留待用户裁决。
 
@@ -117,7 +117,7 @@
 1. **五维覆盖**：哪几维有料、哪几维是 `[待补]`（判定标准见 §九，强制）
 2. **证据覆盖度**：每维信息有没有出处（直引 / 事实 / 推断）
 3. **待定冲突**：跨来源矛盾按什么口径裁决的、哪些留着让用户定
-4. **落库位置**：`~/.ai-with-u/characters/<角色名>/`
+4. **落库位置**：`{存储根}/characters/<角色名>/`
 
 - **一句话收尾**：「以上这样，可以开聊了吗？」用户说行 → 落库收尾（生成 `opening` 并按 `extended/character_card.md` 2.5 首次登场）；说哪块不对 → 就地改，改完不必重走全流程。
 - **不演测试**：不做角色试演、不出示例台词、不示范对话（想先感受一下就**直接开聊**——那是聊天，不是测试）。
@@ -161,15 +161,15 @@
 ## 十一、产物对接
 
 - 蒸馏完整卡落库后，**对话时读取「对话场景七字段视图」**（`card.json`）；五维完整卡仅作存档与回溯，不整卡塞进对话上下文。
-- 落库位置：`~/.ai-with-u/characters/<角色名>/`。
+- 落库位置：`{存储根}/characters/<角色名>/`。
 - `_index.json` 条目标注 `source: distill`，与 `custom` / `import` 同库共存。
 - 落库完成后生成开场白写入 `opening`（并备 2-3 句 `openings`）并首次登场（见 `extended/character_card.md` 2.5）。
 - 对话行为、卡库管理、字段修改与升级规则一律按 `extended/character_card.md` 执行。
 
 ## 十二、断点保存（中断可续）
 
-- 每个 Phase 完成后立即写 `_checkpoint.json`（**统一存放于该角色目录** `~/.ai-with-u/characters/<角色名>/_checkpoint.json`，不用临时 output/），记录：当前完成阶段、该阶段产物摘要、下一步待办。
-- **角色名未定时**（Phase 1 接收设定尚未确定目标角色名就中断）：checkpoint 暂存存储根 `~/.ai-with-u/_checkpoint_pending.json`，待角色名确定后迁入角色目录。
+- 每个 Phase 完成后立即写 `_checkpoint.json`（**统一存放于该角色目录** `{存储根}/characters/<角色名>/_checkpoint.json`，不用临时 output/），记录：当前完成阶段、该阶段产物摘要、下一步待办。
+- **角色名未定时**（Phase 1 接收设定尚未确定目标角色名就中断）：checkpoint 暂存存储根根目录 `{存储根}/_checkpoint_pending.json`，待角色名确定后迁入角色目录。
 - 中断后恢复三选一：
   - **继续蒸馏**：读取最近 checkpoint（若 `_checkpoint_pending.json` 存在，先迁入角色目录再续），从断点阶段接着跑；
   - **重来**：清空当前角色目录，从接收设定重走；

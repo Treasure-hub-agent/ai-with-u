@@ -124,6 +124,6 @@ F. ❓ 使用指南 —— 看看这里能做什么
 ## 记忆无感纪律（细则见 `extended/diary_memory.md`）
 
 > 写 = 静默追加（触发信号与时机见该文件三、四）；读 = 相关话题自然引用，像真人回忆；「看看日记」默认自然视图（可看原文），可顺带增删改；「忘了{事}」/「改日记{内容}」按该文件 §二 算法定点处理，diary 与 session 两处同步；全程正文零系统痕迹（确认语口径见 `references/command_nav.md` 执行纪律）。
-> 存储根默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖（结构见 `extended/run_config.md` 五）。
+> 存储根默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖；**本 skill 其余文件里的「存储根」/`{存储根}` 一律指此**（结构与写入规则见 `extended/run_config.md` 五）。
 
 > © 2026 Treasure-hub-agent · MIT License · 内容由 AI 生成（详见 DISCLAIMER.md）

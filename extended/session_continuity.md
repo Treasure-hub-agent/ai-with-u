@@ -6,7 +6,7 @@
 
 ## 一、session.json 字段
 
-- 路径：`~/.ai-with-u/characters/<角色名>/session.json`
+- 路径：`{存储根}/characters/<角色名>/session.json`（存储根默认 `~/.ai-with-u/`，见 `extended/run_config.md` 五）
 - 每轮对话随写盘更新，是「新会话接续 + 时间差感知」的文件侧依据
 
 | 字段 | 类型 | 说明 |
@@ -54,7 +54,7 @@
 
 ## 四、开局单页选择阶段
 
-选中角色后，检测该角色有无历史内容（`~/.ai-with-u/characters/<角色名>/` 下 session.json 的 `recent`/`topic` 非空、或 diary.md 有条目；重置后两者皆空，即视为无历史档案），一页展示、确认后开始：
+选中角色后，检测该角色有无历史内容（`{存储根}/characters/<角色名>/` 下 session.json 的 `recent`/`topic` 非空、或 diary.md 有条目；重置后两者皆空，即视为无历史档案），一页展示、确认后开始：
 
 ```
 选中角色

@@ -6,7 +6,7 @@
 
 ## 一、日记文件与结构
 
-  路径：`~/.ai-with-u/characters/<角色名>/diary.md`
+  路径：`{存储根}/characters/<角色名>/diary.md`（存储根默认 `~/.ai-with-u/`，见 `extended/run_config.md` 五）
 - 运行时实际文件为 **markdown**（如下），本身即可直接复制 / 备份 / 迁移；`schema/diary.schema.json` 是其**结构参考**（描述 diary.md 应表达的信息：日期 / 时间线 / 心情），不替代 markdown 本体
   结构：按天分组，每天含**时间线**（客观）与**心情部分**（角色口吻）；已有条目不动，新内容追加到末尾
 

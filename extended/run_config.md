@@ -72,12 +72,12 @@
 
 ## 五、存储根与目录结构
 
-- 存储根：`~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖
-- 结构：
+- **存储根**：默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖；**本 skill 全部文件（`SKILL.md` / `extended/` / `references/` / `schema/`）里的「存储根」与 `{存储根}` 字样一律指此**，仅当环境变量未设置时才回落默认路径
+- 结构（`{存储根}` = 存储根）：
 
 ```
-~/.ai-with-u/
-├── _index.json                    # 角色索引
+{存储根}/
+├── _index.json                    # 角色索引（角色名的 `path` 存**相对存储根**的路径）
 ├── _checkpoint_pending.json       # 蒸馏角色名未定时断点暂存（见 distillation §十二）
 └── characters/<角色名>/
     ├── card.json                  # 角色卡
@@ -88,3 +88,4 @@
 - `_index.json` 索引全部角色；`characters/<角色名>/` 下每角色三件套：`card.json` / `diary.md` / `session.json`
 - **蒸馏角色目录**另含 `full_card.md` / `manifest.json`（蒸馏质量清单，注意与发布清单 `MANIFEST.json` 区分）/ `_checkpoint.json`（断点，见 `extended/distillation.md`），对话只读 `card.json`
 - 存储根可被多客户端共享读写，以文件状态为权威（见 `extended/session_continuity.md` 三、last_ts 规则）
+- **换根（设置/更换 `AIWU_STORAGE_ROOT` 后）**：一切路径按新存储根拼接；`_index.json` 无需迁移——读索引失败或条目路径打不开时按 `extended/character_card.md` 3.1 的卡库自检扫描 `characters/*/card.json` 重建
