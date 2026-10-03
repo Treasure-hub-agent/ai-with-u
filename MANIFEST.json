@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T15:07:50Z",
+  "generated": "2026-10-03T15:11:25Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -60,20 +60,20 @@
       "bytes": 1042
     },
     "extended/character_card.md": {
-      "sha256": "ac9808a1dc0ba4e00d8d727fddce49a1532eba122679fd6c84fc8b832f3b3ca3",
-      "bytes": 24880
+      "sha256": "8d578a9e95ba505e59a2dffe528150788ce319dcd567541777dfa6a09d0d1956",
+      "bytes": 26932
     },
     "extended/diary_memory.md": {
       "sha256": "2bbf0ab64d0ad7b3c7e83d7cd516fb55a00919d19acbb8e46b4387152ef01193",
       "bytes": 10336
     },
     "extended/distillation.md": {
-      "sha256": "ac2ba0efd1865491376584283c63a5a59aec1002418237b501da01a092a5d6c5",
-      "bytes": 16784
+      "sha256": "813e93e285b6145a626710bd733ffb4e09b38d226080205af6ec525f0d7a718e",
+      "bytes": 16938
     },
     "extended/quick_create.md": {
-      "sha256": "57979a7bf68a0d04aa6c5b6014d23ec172895ec278d6f4d4acc2ff1519628935",
-      "bytes": 7801
+      "sha256": "342e3065c7941be6fa2d2050dd90a6973f2875659b73206200ff844cf14103e4",
+      "bytes": 8562
     },
     "extended/run_config.md": {
       "sha256": "7e8294b9edfd7a26857b39f2b9de4f59ac0a13a77e3edbc47533382bcb47d638",
@@ -120,8 +120,8 @@
       "bytes": 3589
     },
     "references/changelog.md": {
-      "sha256": "f8a452572cdea09da310350401ef98fd9fff15c0cc681bf3a8bd1af3af18d652",
-      "bytes": 16414
+      "sha256": "24ebe036b3e732e38d57811af5d995a4877ca830ba0a8b4ad3dfb4b997959405",
+      "bytes": 16977
     },
     "references/command_nav.md": {
       "sha256": "17e187de4f1db4e54e6b44638e2834b1f678bb018409e22a8d379db932b026fa",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 725974
+  "total_bytes": 729504
 }
