@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-04T16:07:12Z",
+  "generated": "2026-10-04T16:20:42Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -36,12 +36,12 @@
       "bytes": 1075
     },
     "README.en.md": {
-      "sha256": "1efdb05c861580f9ebec47772a1833b4d72fb994e51dd794d8627add1d72144d",
-      "bytes": 16622
+      "sha256": "bb9f4202941e0f739733286e265d3cc7894e0707b053cc21cf8c0aa33e76dfa7",
+      "bytes": 16853
     },
     "README.md": {
-      "sha256": "d80b316e85213c21ae85cb1c4e0ba6dd0667f077b501dce332c106893b16f95f",
-      "bytes": 15607
+      "sha256": "e606a72e96ddb767511e2c84fb6e82a4dab00a742f9a9ba128bc03a23024b035",
+      "bytes": 16633
     },
     "SECURITY.md": {
       "sha256": "da23f81989b3a82e849b8f8d52b9ced3722e49f525b1f16e6a63b4aa926abd99",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 743921
+  "total_bytes": 745178
 }

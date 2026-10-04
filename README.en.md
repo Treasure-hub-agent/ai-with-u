@@ -77,24 +77,29 @@ The most common failures when chatting with AI:
 ## A Taste of It
 
 ```
-You: 刚醒，早上好
+You: 我回来了
 
-TA: 早呀～ 昨晚梦到什么了？头发都翘起来了，先去喝口水吧。
+TA: 诶诶诶！你终于回消息了
 
-You: 梦到我们去看海了
+我买了排骨！！超市打折，我是不是很会过日子
 
-TA: （笑）那就当预演咯。等哪天真的去，我要在沙滩上写你的名字。
+……好吧其实是我想吃你上次做的那个
 
 ---
 
 You: 看看日记
 
-TA: 📔 08-10 晴
-- 她梦到和我去看海
-- 说好了以后要去看真的海
+TA: （那边安静了两秒）行吧，你别笑我
+
+9 月 30 日
+晚上 · 她说她在收尾一个表，让我等她二十分钟
+晚上 · 她晚饭吃的泡面，我说那个汤别喝
+> 排骨泡上了。她回来之前我先别睡。
+
+看完了就说
 ```
 
-*Note: dialogue defaults to Chinese; you can switch to English by telling your character your preferred language.*
+*Nothing but messages — no status bar, no option lists, no "recorded" system-speak; the diary is read out in the character's own voice. Note: dialogue defaults to Chinese; tell your character your preferred language to switch.*
 
 ---
 
