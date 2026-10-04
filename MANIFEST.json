@@ -1,6 +1,6 @@
 {
   "version": "0.1.7",
-  "generated": "2026-10-03T15:56:48Z",
+  "generated": "2026-10-04T16:07:12Z",
   "root": ".",
   "files": {
     ".gitattributes": {
@@ -48,8 +48,8 @@
       "bytes": 724
     },
     "SKILL.md": {
-      "sha256": "525a345a294fd6a366fc7ad7461c1bec1bfd4ad435270a78cf91b5395a55afa9",
-      "bytes": 12661
+      "sha256": "51723e07ac5082f6aa002de7119e3ae205ec7e59d323bde85c3cf8bec727dd22",
+      "bytes": 12942
     },
     "VERSION": {
       "sha256": "ba57e7c7f71876d645bcdd9fb070f2dea8e6db5ed284a7e3d85c6b7d2409fef1",
@@ -60,12 +60,12 @@
       "bytes": 1042
     },
     "extended/character_card.md": {
-      "sha256": "22a270ae15824227d4cdddb8bf8cb9ece236d65efab0d595e1d28b0c579aa2d6",
-      "bytes": 29591
+      "sha256": "f2b9f86569c17e93e6b22d3f708598a38f852b7bf1ed216b3e815a4ac2237c15",
+      "bytes": 31036
     },
     "extended/diary_memory.md": {
-      "sha256": "a66e83e501512cb4fe46535f25baf6ee0c03f1bcb732e096c5c7115624a94bf1",
-      "bytes": 10503
+      "sha256": "32a6db33fb110d3efa8ce5058bfdd6ba49179280a31a80f3a7ac3f8db629eda8",
+      "bytes": 10651
     },
     "extended/distillation.md": {
       "sha256": "813e93e285b6145a626710bd733ffb4e09b38d226080205af6ec525f0d7a718e",
@@ -120,12 +120,12 @@
       "bytes": 4052
     },
     "references/changelog.md": {
-      "sha256": "e7a23fbcb985f484ecec4f0cc739eaa963a237e0d9c6edc614279cd78df50c12",
-      "bytes": 20255
+      "sha256": "05ced95f9857bf9f1d9d34a32fcb06d90d93a315733a88e20dc266050f2f5d8e",
+      "bytes": 21426
     },
     "references/command_nav.md": {
-      "sha256": "8cd896ed17a5d8ee0ce280cdfd433b715b3f888c17c1c05eca72dbd6a54a2681",
-      "bytes": 5391
+      "sha256": "174ac4f77c7da5d9125579f9545f67a3c0741c6aaf6dc8c710dc9740b602dbbf",
+      "bytes": 5546
     },
     "references/human_chat_guide.md": {
       "sha256": "28da96c45da15b1494ae98ed465572620bf8d457bca871fe22187625fe4fc958",
@@ -145,5 +145,5 @@
     }
   },
   "total_files": 35,
-  "total_bytes": 740721
+  "total_bytes": 743921
 }
