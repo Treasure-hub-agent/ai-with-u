@@ -111,7 +111,7 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 
 `-g` installs into your user-level skills directory (without it, files land in a project-level directory, which some clients stop loading after a restart); the installer asks which client to target. Works with Hermes / Claude Code / Cursor (Windows / macOS / Linux) — restart the client, then send "打开 AIWU" (open AIWU) to begin.
 
-> **Sanity check**: confirm `~/.hermes/skills/ai-with-u/SKILL.md` exists (for Claude Code, `~/.claude/skills/ai-with-u/`; for Cursor, `~/.cursor/skills/ai-with-u/`). If "打开 AIWU" does nothing, check this path first, then confirm the client was restarted; otherwise fall back to the manual copy below.
+> **Sanity check**: confirm `~/.hermes/skills/ai-with-u/SKILL.md` exists (for Claude Code, `~/.claude/skills/ai-with-u/`; for Cursor, `~/.cursor/skills/ai-with-u/`; for Operit, `/sdcard/Download/Operit/skills/ai-with-u/`). If "打开 AIWU" does nothing, check this path first, then confirm the client was restarted; otherwise fall back to the manual copy below.
 
 > No `npx skills`? See "Manual copy" below.
 
@@ -122,8 +122,19 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 | Hermes | `~/.hermes/skills/ai-with-u/` (multi-profile: `~/.hermes/profiles/<profile>/skills/ai-with-u/`) |
 | Claude Code | `~/.claude/skills/ai-with-u/` |
 | Cursor | `~/.cursor/skills/ai-with-u/` |
+| Operit (Android) | `/sdcard/Download/Operit/skills/ai-with-u/` (import from repo or market in Packages → Skills) |
 
 Restart your client after copying, then send "打开 AIWU".
+
+### Operit (Android) · in-app install
+
+Operit manages skills itself — no command line needed:
+
+1. Open `Packages → Skills` (or tap the store icon and search for this skill in the market)
+2. Tap `+` → choose "Repository" and enter `https://github.com/Treasure-hub-agent/ai-with-u` (or use "ZIP" with a release package)
+3. Make sure the toggle on the right of the entry is **on** (only then can the AI use it), then send "打开 AIWU" to start
+
+> Data lives in `/sdcard/Download/Operit/ai-with-u/`, separate from the skill folder — upgrading or reinstalling the skill keeps your cards and diaries.
 
 ---
 
@@ -183,7 +194,7 @@ Commands default to Chinese; the English aliases below work too — say them nat
 
 ## Your Memory, Your Files
 
-The character's memory is just a few markdown / JSON files under `~/.ai-with-u/` — not locked inside a platform, not stored in someone else's cloud:
+The character's memory is just a few markdown / JSON files under the storage root (desktop default `~/.ai-with-u/`; on Android/Operit `/sdcard/Download/Operit/ai-with-u/`) — not locked inside a platform, not stored in someone else's cloud:
 
 - 📂 **Local and readable**: cards, diaries, session state — plain text you can open, read, and edit
 - 💾 **Exportable and backup-able**: copy the folder for a complete backup; move to a new machine or client and keep going
@@ -197,7 +208,7 @@ Your memory belongs to you, not to a server.
 
 ## Storage & Permissions
 
-Runtime data lives in `~/.ai-with-u/` (override with env var `AIWU_STORAGE_ROOT`). File read/write is required to persist character cards, diaries, and session history; without write access it **silently degrades** to pure-context mode — chatting never breaks.
+Runtime data lives in the storage root (desktop default `~/.ai-with-u/`; on Android/Operit `/sdcard/Download/Operit/ai-with-u/`; override with a user-specified directory or the env var `AIWU_STORAGE_ROOT`). File read/write is required to persist character cards, diaries, and session history; without write access it **silently degrades** to pure-context mode — chatting never breaks.
 
 ---
 
@@ -258,7 +269,7 @@ ai-with-u/
 A: A regular prompt is a suggestion; AI-WITH-U is hard rules + a self-check list. Zero system traces, time-gap awareness, and diary memory all have enforced per-reply checks.
 
 **Q: Where does my chat data go?**
-A: Cards, diaries and session data stay on your machine in `~/.ai-with-u/` (configurable via `AIWU_STORAGE_ROOT`) — nothing is uploaded. A network read happens only when you hand over a link during distillation, or explicitly confirm an online lookup.
+A: Cards, diaries and session data stay on your machine in the storage root (desktop `~/.ai-with-u/`; on Android/Operit `/sdcard/Download/Operit/ai-with-u/`; configurable via `AIWU_STORAGE_ROOT`) — nothing is uploaded. A network read happens only when you hand over a link during distillation, or explicitly confirm an online lookup.
 
 **Q: Version history?**
 A: See `references/changelog.md`; `VERSION` file and SKILL.md frontmatter are authoritative.

@@ -6,7 +6,7 @@
 
 ## 一、session.json 字段
 
-- 路径：`{存储根}/characters/<角色名>/session.json`（存储根默认 `~/.ai-with-u/`，见 `extended/run_config.md` 五）
+- 路径：`{存储根}/characters/<角色名>/session.json`（存储根见 `extended/run_config.md` 五：手机端 `/sdcard/Download/Operit/ai-with-u/`、桌面端 `~/.ai-with-u/`）
 - 每轮对话随写盘更新，是「新会话接续 + 时间差感知」的文件侧依据
 
 | 字段 | 类型 | 说明 |

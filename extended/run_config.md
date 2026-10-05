@@ -75,7 +75,12 @@
 
 ## 五、存储根与目录结构
 
-- **存储根**：默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖；**本 skill 全部文件（`SKILL.md` / `extended/` / `references/` / `schema/`）里的「存储根」与 `{存储根}` 字样一律指此**，仅当环境变量未设置时才回落默认路径
+- **存储根**（按宿主环境取值，优先级自上而下；同一台设备首次确定后保持不变）：
+  1. **用户指定目录**——用户明确说「数据放某处」时以其为准
+  2. **环境变量 `AIWU_STORAGE_ROOT`**——桌面宿主可用
+  3. **手机端宿主（Android，如 Operit）→ `/sdcard/Download/Operit/ai-with-u/`**——`/sdcard` 在 Android 侧与 Linux 侧都可读写；Operit 的技能目录是 `/sdcard/Download/Operit/skills/`，数据放在同级的 `ai-with-u/`，升级或重装技能不影响数据
+  4. **桌面宿主（Windows / macOS / Linux）→ `~/.ai-with-u/`**
+- **本 skill 全部文件（`SKILL.md` / `extended/` / `references/` / `schema/`）里的「存储根」与 `{存储根}` 字样一律指此**
 - 结构（`{存储根}` = 存储根）：
 
 ```
@@ -92,4 +97,4 @@
 - **蒸馏角色目录**另含 `full_card.md` / `manifest.json`（蒸馏质量清单，注意与发布清单 `MANIFEST.json` 区分）/ `_checkpoint.json`（断点，见 `extended/distillation.md`），对话只读 `card.json`
 - 存储根可被多客户端共享读写，以文件状态为权威（见 `extended/session_continuity.md` 三、last_ts 规则）
 - **并发写口径（最小）**：**同一时刻只用一个客户端**（session.json 每轮整文件覆盖、diary 追加式写入，多端同时写会互相覆盖）；确实交替使用时按最小合并规则处理——写 session.json 前**先重读**并与上下文中的 `recent` / `last_ts` 合并（取更晚的 `last_ts`），写 diary.md 前**先重读再追加**；内容冲突时以**更晚的 `last_ts` 与 diary 现有内容**为准
-- **换根（设置/更换 `AIWU_STORAGE_ROOT` 后）**：一切路径按新存储根拼接；`_index.json` 无需迁移——读索引失败或条目路径打不开时按 `extended/character_card.md` 3.1 的卡库自检扫描 `characters/*/card.json` 重建
+- **换根（设置/更换存储根后）**：一切路径按新存储根拼接；`_index.json` 无需迁移——读索引失败或条目路径打不开时按 `extended/character_card.md` 3.1 的卡库自检扫描 `characters/*/card.json` 重建

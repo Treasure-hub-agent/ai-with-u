@@ -175,7 +175,7 @@
 
 ### 2.1 落库路径
 
-所有来源最终都落到同一处——**存储根**（默认 `~/.ai-with-u/`，可用环境变量 `AIWU_STORAGE_ROOT` 覆盖，定义见 `extended/run_config.md` 五；本文档其余处的「存储根」同义）：
+所有来源最终都落到同一处——**存储根**（取值见 `extended/run_config.md` 五：手机端 `/sdcard/Download/Operit/ai-with-u/`、桌面端 `~/.ai-with-u/`，可被用户指定目录或环境变量 `AIWU_STORAGE_ROOT` 覆盖；本文档其余处的「存储根」同义）：
 
 ```
 {存储根}/characters/<角色名>/card.json

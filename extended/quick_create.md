@@ -11,7 +11,7 @@
 | 快速档 | 「建个角色」+ 一句话描述 | 一句话 → AI 生成七字段卡 → 确认/改/重来 → 落库开聊 | 七字段卡（未覆盖字段标 `[AI推断]`；可缺字段有缺且用户接受先聊不补全时按 `extended/character_card.md` §1.4 统一口径标 `lite: true`，可升级；关系定位恒必填，缺失时由 AI 推断 `[AI推断]`） |
 | 全面定制档 | 「认真建个角色」/ 想逐项打磨（= 主菜单 B 的「深度定制」） | 七字段向导（四轮问答或简化模式）+ AI 智能补全 → 确认 → 落库 | 完整卡 |
 
-两条路径共用同一落库：`{存储根}/characters/<角色名>/card.json`，并更新 `{存储根}/_index.json`（source: `custom`；存储根默认 `~/.ai-with-u/`，见 `extended/run_config.md` 五）。
+两条路径共用同一落库：`{存储根}/characters/<角色名>/card.json`，并更新 `{存储根}/_index.json`（source: `custom`；存储根见 `extended/run_config.md` 五：手机端 `/sdcard/Download/Operit/ai-with-u/`、桌面端 `~/.ai-with-u/`）。
 
 **分档决策**：用户选主菜单 B 但未给描述时，AI 先反问一句「想快速建一个，还是认真逐项定制？」；用户仍只说「随便/快速」→ 默认走快速档。
 

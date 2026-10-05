@@ -107,7 +107,7 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 
 `-g` 装到用户级 skills 目录（不加则装到当前目录的项目级目录，部分客户端重启后不加载）；安装过程会让你选客户端。支持 Hermes / Claude Code / Cursor（Windows / macOS / Linux），装完重启客户端，发「打开 AIWU」即可开局。
 
-> **装好后自检**：确认 `~/.hermes/skills/ai-with-u/SKILL.md` 存在（Claude Code 对应 `~/.claude/skills/ai-with-u/`，Cursor 对应 `~/.cursor/skills/ai-with-u/`）。发「打开 AIWU」没反应时，先查这一步、再确认客户端已重启；仍不行改用手动复制。
+> **装好后自检**：确认 `~/.hermes/skills/ai-with-u/SKILL.md` 存在（Claude Code 对应 `~/.claude/skills/ai-with-u/`，Cursor 对应 `~/.cursor/skills/ai-with-u/`，Operit 对应 `/sdcard/Download/Operit/skills/ai-with-u/`）。发「打开 AIWU」没反应时，先查这一步、再确认客户端已重启；仍不行改用手动复制。
 
 > 没有 `npx skills`？见下方「手动复制」。
 
@@ -120,8 +120,19 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 | Hermes | `~/.hermes/skills/ai-with-u/`（多 profile 配置：`~/.hermes/profiles/<profile>/skills/ai-with-u/`） |
 | Claude Code | `~/.claude/skills/ai-with-u/` |
 | Cursor | `~/.cursor/skills/ai-with-u/` |
+| Operit（Android） | `/sdcard/Download/Operit/skills/ai-with-u/`（「包管理 → Skills」从仓库或市场导入） |
 
 复制完成后**重启客户端**，发「打开 AIWU」即可开局。
+
+### Operit（Android）· 应用内安装
+
+Operit 自带 Skill 管理，全程不用命令行：
+
+1. 打开 `包管理 → Skills`（或点右下角商店图标进市场直接搜本 skill）
+2. 点 `+` → 选「仓库」，填 `https://github.com/Treasure-hub-agent/ai-with-u`（也可选「ZIP」导入发布包）
+3. 装好后确认该条目右侧开关处于**开启**状态（开启才允许 AI 使用），然后发「打开 AIWU」开局
+
+> 数据落在 `/sdcard/Download/Operit/ai-with-u/`（与技能目录分开存放），升级或重装技能不会丢角色卡与日记。
 
 ---
 
@@ -155,7 +166,7 @@ npx skills add Treasure-hub-agent/ai-with-u -g
 
 ## 记忆是你的
 
-TA 的记忆就是 `~/.ai-with-u/` 下的几个 markdown / JSON 文件——不锁在某个平台里，也不放在谁的云上：
+TA 的记忆就是存储根下的几个 markdown / JSON 文件（桌面宿主默认 `~/.ai-with-u/`，手机端 `/sdcard/Download/Operit/ai-with-u/`）——不锁在某个平台里，也不放在谁的云上：
 
 - 📂 **存本地，看得见**：角色卡、日记、会话记录都是纯文本，想读就读、想改就改
 - 💾 **能导出、能备份**：整个目录复制走就是完整备份；换电脑、换客户端，接着往下聊
@@ -229,7 +240,7 @@ TA：（那边安静了两秒）行吧，你别笑我
 
 ## 存储与权限
 
-运行时数据存放在 `~/.ai-with-u/`（可用环境变量 `AIWU_STORAGE_ROOT` 覆盖路径），需要文件读写权限来保存角色卡、日记与会话记录；没有写权限时**静默降级**为纯上下文模式，聊天不中断。
+运行时数据存放在存储根目录（桌面宿主默认 `~/.ai-with-u/`，手机端 `/sdcard/Download/Operit/ai-with-u/`；可用用户指定目录或环境变量 `AIWU_STORAGE_ROOT` 覆盖路径），需要文件读写权限来保存角色卡、日记与会话记录；没有写权限时**静默降级**为纯上下文模式，聊天不中断。
 
 ---
 
@@ -290,7 +301,7 @@ ai-with-u/
 A: 普通 prompt 是「建议」，AI-WITH-U 是「硬规则 + 自检清单」：零系统痕迹、时间差感知、日记记忆都有强制自检步骤，AI 每轮回复前逐项核对。
 
 **Q: 我的聊天数据会传到哪里？**
-A: 角色卡、日记、会话记录都只存在你自己电脑的 `~/.ai-with-u/`（可配置 `AIWU_STORAGE_ROOT` 覆盖路径），不会上传。只有你在蒸馏时主动给链接、或明确确认后联网检索，才会发起一次读取。
+A: 角色卡、日记、会话记录都只存在你自己设备上的存储根目录（桌面默认 `~/.ai-with-u/`，手机端 `/sdcard/Download/Operit/ai-with-u/`；可配置 `AIWU_STORAGE_ROOT` 覆盖路径），不会上传。只有你在蒸馏时主动给链接、或明确确认后联网检索，才会发起一次读取。
 
 **Q: 版本历史？**
 A: 见 `references/changelog.md`，版本号以 `VERSION` 文件与 `SKILL.md` frontmatter 为准。

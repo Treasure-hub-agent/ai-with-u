@@ -12,7 +12,7 @@ You understand and agree that, to the maximum extent permitted by law, the maint
 
 ## 3. Data & Privacy
 
-Character cards, diaries, and session data are stored on your own device (`~/.ai-with-u/`, overridable via the `AIWU_STORAGE_ROOT` environment variable) and are **never uploaded or synced**. This skill contains no analytics or telemetry. You are responsible for keeping and backing up your data; the maintainer cannot recover data lost to device failure or accidental deletion.
+Character cards, diaries, and session data are stored on your own device (on Android/Operit `/sdcard/Download/Operit/ai-with-u/`; on desktop `~/.ai-with-u/`, overridable via the `AIWU_STORAGE_ROOT` environment variable) and are **never uploaded or synced**. This skill contains no analytics or telemetry. You are responsible for keeping and backing up your data; the maintainer cannot recover data lost to device failure or accidental deletion.
 
 ## 4. Models & Third-Party Services
 
